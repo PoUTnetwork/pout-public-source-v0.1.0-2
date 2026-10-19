@@ -10,6 +10,12 @@ This is an experimental source package, not an audited security product. Do not 
 - No proof here establishes persistent custody, independent demand, real useful delivery, Sybil resistance, collusion resistance, honest timing, fresh unpredictable selection, bandwidth scarcity or secure consensus weight. `consensus_eligibility = NotEstablished`.
 - Synthetic fixture keys, proofs, enrollment identifiers and randomness are intentionally public. No proving parameters, secret scalar, private signing key, raw private witness, certificate or wallet is included.
 
+## Synthetic freshness and consumption controls
+
+The optional `resource_controls` example is an isolated finite-policy model. Every positive `RelationObservation` is explicitly assumed for the model; no pairing verification, witness proof or physical-resource verification occurs in this module. Its accepted records are logical entries, not protocol consensus eligibility.
+
+Challenge issuance, timestamps, identity bindings, resource-anchor provenance and key-to-family admission must come from a separately authenticated authority. An attacker-controlled source tag or family mapping defeats assumptions of uniqueness. Key rotation deduplicates only when both keys were independently admitted to the same family. Distinct admitted families or challenge IDs can create distinct logical records from one synthetic resource. Fork-local consumption views are alternatives and must not be summed as canonical chain weight. No cross-fork consensus, persistence, challenge unpredictability, true service freshness or resource scarcity is proved.
+
 ## Execution assumptions
 
 - CWC tests use finite artificial counters; they do not create currency or connect to operational accounting.

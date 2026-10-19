@@ -27,6 +27,14 @@ The default set is 21 CWC unit tests, 12 CWC integration tests, 6 verifier unit 
 
 The bounded CWC enumeration covers 5,265 candidates: 1,458 accepted and 3,807 rejected across its finite state/operation corpus. This is finite model evidence. It is not an all-input correctness proof or a benchmark establishing speedup.
 
+## Public accounting-controls research addendum — October 19, 2026
+
+A new standalone `resource_controls` example and 11 integration tests model externally pinned identity/resource scope, half-open freshness windows, replay consumption, permitted key-family rotation and alternative fork-local accounting. The model also preserves a split-family counterexample: different admitted families may count the same assumed resource twice. A new challenge identifier similarly does not prove a new physical resource.
+
+Run `cargo test --locked -p pout-public-verifier --test resource_controls` and `cargo run --locked -p pout-public-verifier --example resource_controls` after applying this addendum. These are **commands to run**, not executed validation claims. The original 41/0/0 release results in the table above apply only to the unchanged v0.1.0 source package. No aggregate updated result is asserted here.
+
+The new model does not call the cryptographic verifier, prove physical storage/bandwidth, authenticate a clock or source label, establish demand, or enforce global fork consumption. The separate earlier private-repository figure of 823 Rust passes does not belong to this exported workspace and is not copied here as public test evidence. Hosted CI for this addendum is unverified.
+
 ## Remaining research and validation gaps
 
 - `consensus_eligibility = NotEstablished`. Neither receipts nor these proof vectors establish independent useful delivery, economic demand, resource scarcity, Sybil resistance or secure consensus weight.

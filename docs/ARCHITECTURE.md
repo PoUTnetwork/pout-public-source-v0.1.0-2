@@ -31,3 +31,7 @@ CWC uses the Rust standard library, BLAKE3 and typed errors. The verifier uses B
 ## Deliberately outside this package
 
 Encrypted storage/CDN operations, authenticated service enrollment, discovery, operational authorizations and settlement, persistent recovery, publication quotas, wallets, tokens, consensus eligibility, GHOSTDAG ordering and consensus activation are not exported. They must not be inferred from these isolated experiments. No cross-platform runtime or multi-device interoperability claim follows from a Linux build.
+
+## Isolated public accounting-controls addendum
+
+The standalone `pout-public-verifier` example `resource_controls` adds no operational protocol dependency and is not imported into the Groth16 verifier library. It models independent trusted context, a pre-authorized key-family map and a bounded in-memory consumption view. Successful records are conditional on assumed relation validity and external labels. Cloned views are alternate histories. No network, ledger, customer funds, persistent resource measurements or consensus authority is provided.
