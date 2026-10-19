@@ -1,0 +1,22 @@
+[workspace]
+members = ["crates/pout-cwc-research", "crates/pout-public-verifier"]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.88"
+license = "MIT OR Apache-2.0"
+
+[workspace.dependencies]
+blake3 = "1.8.7"
+thiserror = "2.0"
+bellman = { version = "0.14", default-features = false, features = ["groth16"] }
+bls12_381 = "0.8"
+sha2 = "0.10"
+
+[profile.dev]
+debug = 0
+
+[profile.test]
+debug = 0

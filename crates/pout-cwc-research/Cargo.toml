@@ -1,0 +1,16 @@
+[package]
+name = "pout-cwc-research"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish = false
+description = "Isolated finite deterministic CWC execution research; no operational integration"
+
+[features]
+default = []
+# Bounded scheduling controls for isolated integration tests, never normal execution.
+research-controls = []
+
+[dependencies]
+blake3.workspace = true
+thiserror.workspace = true
