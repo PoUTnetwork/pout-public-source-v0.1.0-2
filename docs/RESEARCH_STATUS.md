@@ -33,7 +33,7 @@ A new standalone `resource_controls` example and 11 integration tests model exte
 
 Run `cargo test --locked -p pout-public-verifier --test resource_controls` and `cargo run --locked -p pout-public-verifier --example resource_controls` after applying this addendum. These are **commands to run**, not executed validation claims. The original 41/0/0 release results in the table above apply only to the unchanged v0.1.0 source package. No aggregate updated result is asserted here.
 
-The new model does not call the cryptographic verifier, prove physical storage/bandwidth, authenticate a clock or source label, establish demand, or enforce global fork consumption. The separate earlier private-repository figure of 823 Rust passes does not belong to this exported workspace and is not copied here as public test evidence. Hosted CI for this addendum is unverified.
+The new model does not call the cryptographic verifier, prove physical storage/bandwidth, authenticate a clock or source label, establish demand, or enforce global fork consumption. Hosted CI for this addendum is unverified.
 
 ## Remaining research and validation gaps
 
@@ -46,3 +46,25 @@ The new model does not call the cryptographic verifier, prove physical storage/b
 - No independent external audit, formal consensus proof or production-readiness assessment is supplied.
 
 Next technical work should expand independent review of the finite relations and key provenance, adversarial resource-soundness models and execution boundaries before any operational consensus integration.
+
+## Public byte-observation export — October 20, 2026
+
+The added public files implement selected retrieval framing/content checks, local request-digest consumption and assigned nonrefilling byte budgets. They include 13 retrieval regression definitions and 10 meter regression definitions, plus a five-scenario Unix IPC example. These counts describe source definitions, NOT executed Rust passes.
+
+Packaging checks actually performed:
+
+- Baseline manifest Git-blob identity matched the pinned public commit.
+- All replacement-file baselines available in the prior public update matched its SHA-256 entries.
+- 12 Python reference self-tests passed in Python 3 in the packaging environment.
+- Python known answers were embedded into the Rust fixture regression.
+- Updated/new file hashes, archive integrity, allowed paths and targeted sensitive-content checks completed.
+
+Not executed in the packaging environment:
+
+- Rust compilation, formatting, Clippy or workspace tests for this export.
+- The new Rust Unix IPC example or Python verification of its actual output.
+- Hosted CI or other-platform runtime validation.
+
+The packaging environment has no Rust toolchain. Existing results for other source versions do not validate this adapted export. The included workflow will attempt an exact-commit build, warning check, default/all-feature workspace tests, examples, captured-byte comparison and source-manifest checks after a matching push or manual dispatch. A workflow file is not evidence of a successful run. Any failed check remains a release blocker until diagnosed.
+
+The deterministic fixture can be reconstructed from a short recipe. A metadata-only example intentionally reports unavailable; that is not a lower bound against arbitrary or delegated adversaries. Byte quota conservation is conditional on trusted assignment/time and complete interception of accepted output.

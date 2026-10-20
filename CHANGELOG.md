@@ -1,5 +1,16 @@
 # Changelog
 
+## October 20, 2026 — Public byte-observation review export
+
+- Add selected requested-byte verification and atomic, nonrefilling byte-budget primitives.
+- Add a deterministic actual-file/local-Unix-IPC example and 23 Rust regression definitions.
+- Add an independent Python reference and read-only source-manifest checker.
+- Extend the existing resource-controls example with an explicit invalid-relation rejection.
+- Update existing architecture, security, research-status, example and test documentation.
+- Include a read-only public-source CI workflow. Rust validation of this export is pending; no inherited engineering-suite result is claimed for it.
+- Keep CWC/Groth16 libraries, Cargo.toml, Cargo.lock and third-party notices unchanged.
+
+
 ## Research addendum — October 19, 2026 (validation pending)
 
 - Added a standalone public-only synthetic accounting-controls example and 11 targeted integration tests.

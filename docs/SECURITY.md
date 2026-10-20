@@ -33,3 +33,15 @@ Validation was performed on Linux x86-64 only. Windows, macOS, Android and iOS r
 Public source and synthetic fixture fingerprints may permit correlation if other copies become available. Removing private account details does not guarantee anonymity. Required upstream third-party copyright and attribution notices are deliberately preserved.
 
 For a suspected defect, prepare a minimal reproduction using synthetic inputs. Do not attach secrets or real user data to public issue reports. No private reporting channel or response-time commitment is provided in this package.
+
+## Public byte-observation boundaries
+
+The new retrieval checks bind an exact request and content hash to returned bytes. They do not authenticate the issuer, prove independent demand, measure physical retention or grant eligibility. Caller-selected object manifests must be trusted independently; a manifest carried by an untrusted responder cannot authenticate itself.
+
+The bounded local consumption key includes the request nonce. Reusing an exact request is different from retrying one demand with a new nonce. This public extract does not implement independent demand-slot authorization or globally canonical consumption.
+
+The byte meter is a standard-library accounting primitive, not an OS/network sandbox. The controller chooses meter ownership and supplies monotonic time. Separate meters can be assigned to one shared resource. Output outside this controlled boundary is outside the model. Late, partial and ambiguous writes remain separate from verified, timely delivery. Neither a meter count nor its quota proves physical links or capacity in bytes per second.
+
+The public demo uses a fresh controlled directory, known synthetic data, local Unix IPC and per-socket timeouts. It refuses existing output files. It is not a hostile same-user filesystem isolation boundary. The public adaptation does not include the complete internal campaign supervisor. CI places the example under a separate process timeout; no arbitrary-input service is deployed.
+
+Do not point the example at personal files or use it to secure assets. Only the defined deterministic fixture is used. No secret material, setup/proving parameters, production endpoints or unpublished consensus construction belongs in this addendum. No external audit or successful Rust validation of the adapted export is claimed before its checks actually run.

@@ -26,7 +26,7 @@ A caller choosing its own key and statement pins has not acquired external autho
 
 ## Dependencies and I/O
 
-CWC uses the Rust standard library, BLAKE3 and typed errors. The verifier uses Bellman, BLS12-381, SHA-256 and typed errors. The examples use in-memory public constants and synthetic state. Verification does not make live network requests or need a filesystem witness. Cargo may fetch public dependencies at build time; dependencies are not vendored implementation code.
+CWC uses the Rust standard library, BLAKE3 and typed errors. The verifier uses Bellman, BLS12-381, SHA-256 and typed errors. The original verifier and CWC examples use in-memory public constants and synthetic state. The byte-observation addendum additionally uses controlled fixture files and local Unix streams. Verification does not make live network requests or need a filesystem witness. Cargo may fetch public dependencies at build time; dependencies are not vendored implementation code.
 
 ## Deliberately outside this package
 
@@ -35,3 +35,19 @@ Encrypted storage/CDN operations, authenticated service enrollment, discovery, o
 ## Isolated public accounting-controls addendum
 
 The standalone `pout-public-verifier` example `resource_controls` adds no operational protocol dependency and is not imported into the Groth16 verifier library. It models independent trusted context, a pre-authorized key-family map and a bounded in-memory consumption view. Successful records are conditional on assumed relation validity and external labels. Cloned views are alternate histories. No network, ledger, customer funds, persistent resource measurements or consensus authority is provided.
+
+## Requested-byte and byte-budget addendum
+
+```text
+Caller-pinned manifest + exact request
+    -> file chunk read -> request-bound frame
+    -> receiver framing/context/content checks -> VerifiedResponse or typed failure
+
+Controller-assigned budget
+    -> atomic reservation -> metered writes -> completion accounting
+    -> unused confirmed capacity released; written/uncertain capacity not refunded
+```
+
+These are separate primitives. A `VerifiedResponse` does not authenticate customer demand and a `Lease` does not authenticate a physical link. The standard-library `Write` boundary must be controlled; arbitrary programs can bypass it. The new public example composes these primitives only for an isolated deterministic experiment.
+
+Public adaptation boundary: JSON controllers, random-source preparation, private artifacts and full internal campaign supervisors are not exported. Serialization annotations are removed from the extracted cores. A separate deterministic fixture, public example and independent reference make the reduced scope inspectable without adding dependencies. No new circuit, prover, joint proof, consensus weighting or service payment adapter is included.

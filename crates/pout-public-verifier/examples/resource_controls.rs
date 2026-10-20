@@ -2,7 +2,7 @@
 #[path = "support/resource_controls.rs"]
 mod research;
 
-use research::{authorized_fixture, claim, fixture, Decision, Reject, View};
+use research::{authorized_fixture, claim, fixture, Decision, Reject, RelationObservation, View};
 
 fn run() -> Result<(), &'static str> {
     let expected = fixture(3);
@@ -20,6 +20,11 @@ fn run() -> Result<(), &'static str> {
     }
     if view.observe(&expected, &claim(&expected, 10), &keys, 200) != Err(Reject::Expired) {
         return Err("expiry boundary not enforced");
+    }
+    let mut invalid = claim(&expected, 10);
+    invalid.relation_observation = RelationObservation::ObservedInvalid;
+    if view.observe(&expected, &invalid, &keys, 150) != Err(Reject::InvalidRelation) {
+        return Err("invalid synthetic relation was accepted");
     }
     if view.consumption_count() != 1 {
         return Err("rejection mutated accounting");
