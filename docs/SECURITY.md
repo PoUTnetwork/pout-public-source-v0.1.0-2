@@ -42,6 +42,20 @@ The bounded local consumption key includes the request nonce. Reusing an exact r
 
 The byte meter is a standard-library accounting primitive, not an OS/network sandbox. The controller chooses meter ownership and supplies monotonic time. Separate meters can be assigned to one shared resource. Output outside this controlled boundary is outside the model. Late, partial and ambiguous writes remain separate from verified, timely delivery. Neither a meter count nor its quota proves physical links or capacity in bytes per second.
 
-The public demo uses a fresh controlled directory, known synthetic data, local Unix IPC and per-socket timeouts. It refuses existing output files. It is not a hostile same-user filesystem isolation boundary. The public adaptation does not include the complete internal campaign supervisor. CI places the example under a separate process timeout; no arbitrary-input service is deployed.
+The public demo uses a fresh controlled directory, known synthetic data, local Unix IPC and per-socket timeouts. It refuses existing output files. It is not a hostile same-user filesystem isolation boundary. The public adaptation does not include the complete internal campaign supervisor. No CI workflow is included. Operators should run the example under an appropriate external process timeout; no arbitrary-input service is deployed.
 
 Do not point the example at personal files or use it to secure assets. Only the defined deterministic fixture is used. No secret material, setup/proving parameters, production endpoints or unpublished consensus construction belongs in this addendum. No external audit or successful Rust validation of the adapted export is claimed before its checks actually run.
+
+
+## Finite datasets and evidence validation
+
+The new exact four-bit/bucket models are deliberately tiny, fully disclosed
+reference games. Their success rates do not certify real provider behavior.
+The synthetic frame corpus is generated from the existing deterministic public
+recipe and is not captured from a new network or Rust execution. The full input
+inventory and negative cases are checked; explicit validation remains enabled
+under optimized Python. Test rows, iterations and repeated invocations must not
+be counted as unique test functions.
+
+The broader engineering result is not a public Rust validation. No raw private
+execution reports, runtime secrets or operational endpoints are included.

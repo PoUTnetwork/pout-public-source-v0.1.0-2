@@ -28,3 +28,15 @@ Use a new output directory under a stable, existing parent. The Rust example ref
 The five declared scenarios expect 8 verified responses and 4 quota denials in total. These are expected outcomes, not a report of an execution in the packaging environment. The Python checker independently compares captured frames and the matching two-file/shared-source outputs after an actual Rust run.
 
 `python3 -I -B scripts/check_observation.py --self-test` runs only Python reference controls. It does not execute Rust or establish its results. See [resource observation](../docs/RESOURCE_OBSERVATION.md).
+
+
+## New offline finite-reference pack
+
+```sh
+python3 -I -B scripts/check_research_pack.py
+```
+
+This command needs only Python 3.10+. It runs fixed unit/mutation tests and
+verifies the released synthetic mathematical/byte fixtures. It does not launch
+a node, Rust example, API connection or proof generator. See
+[finite models](../docs/FINITE_MODELS.md) for assumptions.

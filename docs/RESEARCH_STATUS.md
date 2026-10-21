@@ -1,70 +1,58 @@
-# Research status — v0.1.0
+# Public research status - 21 October 2026
 
-## Implemented and exercised
+This file records public-release evidence, not the entire engineering workspace.
 
-| Component | Executed coverage |
-| --- | --- |
-| CWC serial reference and actual scoped parallel workers | Canonical encodings, dependency conflicts, finite independent arithmetic corpus, cancellation and worker failures |
-| Public Groth16 verifier | Real pairings on genuine public synthetic proofs, complete external pins, bounded canonical decoding and malicious-input rejection |
-| Public proof re-encoding | Same-statement transformed proof verifies but preserves the same opportunity identifier; it is not new scarce work |
-| Demonstrations | Both `demo` and `verify_fixtures` execute and check their documented outcomes |
+## Current public export
 
-## Release validation
+The new finite pack adds Python models, separate exact reference checking,
+synthetic request/frame fixtures and mutation tests. The existing Rust source,
+Cargo manifests, dependency lockfile and license files are unchanged.
 
-The standalone exported workspace was tested on Linux x86-64, Rust 1.99.0 and Cargo 1.99.0, using two build jobs and an isolated public dependency cache. Formatting, warning-free Clippy, default workspace tests and workspace build succeeded. The release archive was extracted to an independent directory and the same four checks were repeated against that extracted source. This is local validation, not a hosted CI result or independent security audit.
+The executed package checks and known gaps are recorded in
+[VALIDATION_2026-10-21.md](VALIDATION_2026-10-21.md). A reader can reproduce the new
+checks without network access, a project account or any additional packages.
 
-| Command | Result |
-| --- | --- |
-| `cargo fmt --all -- --check` | Passed |
-| `cargo clippy --locked --workspace --all-targets -- -D warnings` | Passed, no warnings |
-| `cargo test --locked --workspace` | 41 passed, 0 failed, 0 ignored |
-| `cargo build --locked --workspace` | Passed |
-| `cargo test --locked -p pout-cwc-research --all-features --all-targets` | 38 passed, 0 failed, 0 ignored |
-| `cargo run --locked -p pout-cwc-research --example demo` | Passed |
-| `cargo run --locked -p pout-public-verifier --example verify_fixtures` | Passed |
+## Historical public validation
 
-The default set is 21 CWC unit tests, 12 CWC integration tests, 6 verifier unit tests and 2 verifier integration tests. The optional CWC run repeats its 33 default tests and adds five scheduling-control tests: there are **46 distinct test functions** across the configurations, not 79. Documentation test targets and the CWC example test target contain zero tests; both executable examples were separately run.
+The original v0.1.0 release recorded successful fmt, locked all-target Clippy,
+workspace tests and build on Linux x86-64. Its default workspace had 41 passing
+Rust tests, zero failures. The optional CWC run had 38 passes with overlap;
+46 distinct tests existed across those configurations. Those totals belong to
+that original source only. The retained record reports Rust 1.99.0; the declared
+minimum 1.88 and other-platform runtime were not tested in that release record.
 
-The bounded CWC enumeration covers 5,265 candidates: 1,458 accepted and 3,807 rejected across its finite state/operation corpus. This is finite model evidence. It is not an all-input correctness proof or a benchmark establishing speedup.
+The October 19 accounting addendum added eleven Rust test definitions but did
+not claim a separately executed public result. The October 20 byte-observation
+adaptation added 23 Rust test definitions and twelve executed Python reference
+tests. Compilation, Clippy, actual Rust IPC output and full Rust regression for
+that adapted source were not executed in its packaging environment.
 
-## Public accounting-controls research addendum — October 19, 2026
+The workflow mentioned by an earlier package was removed before public upload.
+No workflow is included now. Hosted CI remains unverified. This update corrects
+those obsolete workflow descriptions instead of promising an automatic run.
 
-A new standalone `resource_controls` example and 11 integration tests model externally pinned identity/resource scope, half-open freshness windows, replay consumption, permitted key-family rotation and alternative fork-local accounting. The model also preserves a split-family counterexample: different admitted families may count the same assumed resource twice. A new challenge identifier similarly does not prove a new physical resource.
+## Broader project progress, not a public validation claim
 
-Run `cargo test --locked -p pout-public-verifier --test resource_controls` and `cargo run --locked -p pout-public-verifier --example resource_controls` after applying this addendum. These are **commands to run**, not executed validation claims. The original 41/0/0 release results in the table above apply only to the unchanged v0.1.0 source package. No aggregate updated result is asserted here.
+Internal research has advanced through joint statement binding, byte-observation
+experiments, sampled-pair and repeated-audit models, complete-public-view
+conditioning and first-hit controls. The latest reported engineering workspace
+has 968 Rust passes, zero failures and eight parent-invoked helper fixtures.
+That broader workspace is not included here. This report does not transfer its
+result to the smaller adapted public export or imply an external audit.
 
-The new model does not call the cryptographic verifier, prove physical storage/bandwidth, authenticate a clock or source label, establish demand, or enforce global fork consumption. Hosted CI for this addendum is unverified.
+This release shares selected elementary finite controls and public synthetic
+fixtures, not the full protocol transcript, proof construction or consensus
+integration. These portable models were separately generated and checked for
+this release; they are not verbatim copies of the internal execution logs.
 
-## Remaining research and validation gaps
+## Still not established
 
-- `consensus_eligibility = NotEstablished`. Neither receipts nor these proof vectors establish independent useful delivery, economic demand, resource scarcity, Sybil resistance or secure consensus weight.
-- No consensus algorithm, GHOSTDAG implementation or integrated blockchain is included. CWC is deterministic intra-candidate execution only.
-- The public verifier does not include the proving circuit/setup/prover. Key provenance, circuit semantics and honest setup remain explicit trust assumptions; proof creation is not reproducible from this export alone.
-- The cryptographic fixture is finite and synthetic. No production-sized cryptographic resource-soundness or service-demand claim follows from verification.
-- CWC has no durable storage, process-crash recovery or process-wide resource admission. Its counters are not financial balances.
-- Windows, macOS, Android and iOS runtime tests, private multi-device tests and the declared minimum Rust compiler test have not been executed for this package. Manual iPhone upload does not mean iOS Rust support.
-- No independent external audit, formal consensus proof or production-readiness assessment is supplied.
+- Independent useful-service demand or physical resource scarcity.
+- A global coalition-cost bound for the actual protocol and accumulated history.
+- Safe permissionless eligibility, consensus weight, finality or liveness.
+- A released native chain, migration bridge, mainnet or operational validator.
+- Production networking reliability or mobile/full cross-platform runtime.
+- A new joint Groth16 proof, trusted-setup review or independently audited circuit.
 
-Next technical work should expand independent review of the finite relations and key provenance, adversarial resource-soundness models and execution boundaries before any operational consensus integration.
-
-## Public byte-observation export — October 20, 2026
-
-The added public files implement selected retrieval framing/content checks, local request-digest consumption and assigned nonrefilling byte budgets. They include 13 retrieval regression definitions and 10 meter regression definitions, plus a five-scenario Unix IPC example. These counts describe source definitions, NOT executed Rust passes.
-
-Packaging checks actually performed:
-
-- Baseline manifest Git-blob identity matched the pinned public commit.
-- All replacement-file baselines available in the prior public update matched its SHA-256 entries.
-- 12 Python reference self-tests passed in Python 3 in the packaging environment.
-- Python known answers were embedded into the Rust fixture regression.
-- Updated/new file hashes, archive integrity, allowed paths and targeted sensitive-content checks completed.
-
-Not executed in the packaging environment:
-
-- Rust compilation, formatting, Clippy or workspace tests for this export.
-- The new Rust Unix IPC example or Python verification of its actual output.
-- Hosted CI or other-platform runtime validation.
-
-The packaging environment has no Rust toolchain. Existing results for other source versions do not validate this adapted export. The included workflow will attempt an exact-commit build, warning check, default/all-feature workspace tests, examples, captured-byte comparison and source-manifest checks after a matching push or manual dispatch. A workflow file is not evidence of a successful run. Any failed check remains a release blocker until diagnosed.
-
-The deterministic fixture can be reconstructed from a short recipe. A metadata-only example intentionally reports unavailable; that is not a lower bound against arbitrary or delegated adversaries. Byte quota conservation is conditional on trusted assignment/time and complete interception of accepted output.
+`consensus_eligibility = NotEstablished`
+`consensus_weight = None`

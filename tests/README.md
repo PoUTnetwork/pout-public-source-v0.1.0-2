@@ -1,26 +1,41 @@
-# Test layout
+# Public tests and test-data scope
 
-Executable tests are in the crates so Cargo discovers them without an extra root package:
-
-- `crates/pout-cwc-research/src`: unit tests for codecs, actual workers, graph/wave scheduling, serial outcomes and optional controlled completion ordering.
-- `crates/pout-cwc-research/tests/correctness.rs`: independent arithmetic oracle, 5,265-case bounded corpus, fixed-seed corpus, conflicts, malformed encodings and finite boundary cases.
-- `crates/pout-public-verifier/src/public_verification_tests.rs`: six unit tests retaining parser-private checks, genuine acceptance, independent pins, invalid group encodings, key substitutions, public re-encoding and cancellation.
-- `crates/pout-public-verifier/tests/public_verification.rs`: two public-API integration tests for genuine verification/replay identity, changed authority, false tags, malformed wire and local aborts.
-- `crates/pout-public-verifier/tests/resource_controls.rs`: 11 new synthetic-only accounting-model tests for freshness, externally pinned identities, replay and key families, bounded entries and fork-alternative views. These have not yet been executed in this published addendum.
-
-Run `cargo test --locked --workspace` for default tests. Run `cargo test --locked -p pout-cwc-research --all-features --all-targets` for the optional scheduling controls. These sets overlap; their totals must not be added as if every invocation were a distinct test. See [Research status](../docs/RESEARCH_STATUS.md) for actual executed results.
-
-## Byte-observation regression definitions
-
-`crates/pout-public-verifier/tests/service_observation.rs` contains 13 test definitions for independent known answers, exact response framing, corruption, stale contexts, cached data, object pins, unavailable responses, local consumption, bounds and actual synthetic-file reading.
-
-`crates/pout-public-verifier/tests/byte_budget.rs` contains 10 definitions for atomic contention, spent-byte conservation, partial/drop behavior, cancellation/expiry, late writes, ambiguous errors, panic unwinding, unlocked I/O and explicitly assigned second-meter capacity.
+## New finite-reference pack
 
 ```sh
-cargo test --locked -p pout-public-verifier --test service_observation --test byte_budget
-python3 -I -B scripts/check_observation.py --self-test
+python3 -I -B scripts/check_research_pack.py --json
+python3 -I -B -O scripts/check_research_pack.py --json
 ```
 
-The 23 new Rust tests have not been executed in the packaging environment. The 12 Python reference tests have been executed; they are not Rust passes. All totals in earlier sections remain scoped to their recorded source versions. A successful future CI run should be reported with its exact public commit and actual test totals, without adding overlapping default/all-feature invocations.
+52 unique Python unit/mutation tests run: 40 in `tests/public/test_finite_models.py`
+and the 12 previously published byte-reference tests. The second invocation
+checks the same suite in optimized mode; it does not double the total.
 
-The included CI workflow checks compilation, warning-free Clippy, tests, examples, byte-reference agreement and manifest integrity. It does not provide an external audit or a physical-resource benchmark. Code-format conformance may additionally be inspected with `cargo fmt --all -- --check`; no formatting pass is claimed here.
+In addition, the runner recomputes all 65,536 advice-encoder rows, the other finite
+tables, 128 request digests, 32 chunk hashes and sixteen frame cases. These records
+are not extra test functions. See [fixture schemas](fixtures/README.md).
+
+Negative controls include missing/empty/extra report controls, integer 1 replacing
+boolean true, unexpected eligibility or weight, wrong CSV schema, truncation,
+ambiguous integers, incorrect frames, stale request echoes and wrong objects.
+Checks use explicit exceptions rather than assertions that optimization removes.
+
+## Existing Rust tests
+
+The original v0.1.0 package recorded 41 default workspace passes. Its optional
+CWC configuration overlapped those tests; the original combined distinct count
+was 46, not the sum of invocations. That historical record does not certify later
+addenda. The accounting addendum added 11 integration-test definitions; the byte
+observation addendum added 23 Rust test definitions, with their public Rust
+execution still pending. This update changes none of that Rust code.
+
+```sh
+cargo test --locked --workspace
+cargo test --locked -p pout-cwc-research --all-features --all-targets
+cargo test --locked -p pout-public-verifier --test resource_controls
+cargo test --locked -p pout-public-verifier --test service_observation --test byte_budget
+```
+
+No automatic GitHub Actions workflow is included. Run the documented commands in
+a compatible build environment and record actual results before claiming a new
+Rust validation. A passing finite reference is not an audit or a consensus proof.

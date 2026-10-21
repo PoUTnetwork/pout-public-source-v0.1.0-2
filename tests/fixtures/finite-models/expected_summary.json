@@ -1,0 +1,19 @@
+{
+  "advice_encoders": 65536,
+  "challenges": 4,
+  "consensus_eligibility": "NotEstablished",
+  "consensus_weight": null,
+  "denominator": 64,
+  "first_hit_profiles": 154,
+  "full_protocol_export": false,
+  "gf4_worlds": 16,
+  "kind": "synthetic-finite-reference-v1",
+  "masked_view_worlds": 4,
+  "q0_max_numerator": 28,
+  "q0_maximizers": 1728,
+  "q1_max_numerator": 48,
+  "q1_maximizers": 2944,
+  "repetition_profiles": 12,
+  "schema": 1,
+  "source_states": 16
+}

@@ -51,3 +51,13 @@ Controller-assigned budget
 These are separate primitives. A `VerifiedResponse` does not authenticate customer demand and a `Lease` does not authenticate a physical link. The standard-library `Write` boundary must be controlled; arbitrary programs can bypass it. The new public example composes these primitives only for an isolated deterministic experiment.
 
 Public adaptation boundary: JSON controllers, random-source preparation, private artifacts and full internal campaign supervisors are not exported. Serialization annotations are removed from the extracted cores. A separate deterministic fixture, public example and independent reference make the reduced scope inspectable without adding dependencies. No new circuit, prover, joint proof, consensus weighting or service payment adapter is included.
+
+
+## Portable finite-reference layer
+
+The October 21 update adds research/finite-models and synthetic fixtures under
+tests/fixtures. These standard-library Python tools are independent of the Rust
+consensus/service paths. They test declared information-game assumptions and
+public encoding controls; they neither assign economic weight nor extend the
+Groth16 statement. README-only markers under blockchain/ describe the
+publication boundary and contain no executable implementation.

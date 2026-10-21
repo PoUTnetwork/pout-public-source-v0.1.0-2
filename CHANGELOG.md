@@ -1,5 +1,16 @@
 # Changelog
 
+## Public finite-reference update - October 21, 2026
+
+- Add exact four-bit sampled-pair reference models and a separate list/character-based checker.
+- Publish all 65,536 advice encoders, 256 response tables, 64 target rows, twelve fixed-strategy repeated-audit rows, 154 bucket-advice profiles and two small public-information counterexamples.
+- Add 128 deterministic request vectors, 32 chunk known answers and sixteen synthetic byte frames with explicit expected acceptance/rejection layers.
+- Add 40 new Python unit/mutation tests; the runner also executes the twelve existing Python reference tests (52 unique tests, not multiple-run totals).
+- Check the same suite under normal and optimized Python; explicit validation does not disappear under optimization.
+- Add clearly labeled README-only publication markers under blockchain/.
+- Correct obsolete references to an included Actions workflow. No workflow or Cargo dependency change is included.
+- Refresh the complete source manifest for the merged public tree.
+
 ## October 20, 2026 — Public byte-observation review export
 
 - Add selected requested-byte verification and atomic, nonrefilling byte-budget primitives.
@@ -7,7 +18,7 @@
 - Add an independent Python reference and read-only source-manifest checker.
 - Extend the existing resource-controls example with an explicit invalid-relation rejection.
 - Update existing architecture, security, research-status, example and test documentation.
-- Include a read-only public-source CI workflow. Rust validation of this export is pending; no inherited engineering-suite result is claimed for it.
+- The initial package proposed a public-source CI workflow; that file was removed before upload. Rust validation of this export remains pending; no inherited engineering-suite result is claimed for it.
 - Keep CWC/Groth16 libraries, Cargo.toml, Cargo.lock and third-party notices unchanged.
 
 

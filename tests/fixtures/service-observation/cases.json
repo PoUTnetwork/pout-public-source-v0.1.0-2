@@ -1,0 +1,144 @@
+{
+  "schema": 1,
+  "origin": "generated-public-reference-not-captured-network-traffic",
+  "cases": [
+    {
+      "case": "valid-a",
+      "file": "valid-a.frame",
+      "bytes": 262189,
+      "sha256": "b4051b2b336504036c6f8da27814652473ba7f72a956923159acdbe4f2b85762",
+      "expected_request": {},
+      "expected_result": "Verified"
+    },
+    {
+      "case": "valid-b",
+      "file": "valid-b.frame",
+      "bytes": 262189,
+      "sha256": "6ba3a5e30207baabced931f8410e19ec40885212e38fc1258cd2e239f8ed4755",
+      "expected_request": {
+        "index": 1,
+        "label": 1,
+        "nonce": "3232323232323232323232323232323232323232323232323232323232323232"
+      },
+      "expected_result": "Verified"
+    },
+    {
+      "case": "cached-new-nonce",
+      "file": "cached-new-nonce.frame",
+      "bytes": 262189,
+      "sha256": "b6787d6ffd71377a71e9091a3f9b46ba5087daea224a11a4d1b1b6a399d7d33c",
+      "expected_request": {
+        "nonce": "3333333333333333333333333333333333333333333333333333333333333333"
+      },
+      "expected_result": "Verified"
+    },
+    {
+      "case": "unavailable",
+      "file": "unavailable.frame",
+      "bytes": 45,
+      "sha256": "c64c13ff22dfcb051acdbcff0ac53772f1fdd91368c0d8cc7891d0b290d6caba",
+      "expected_request": {},
+      "expected_result": "Unavailable"
+    },
+    {
+      "case": "corrupt-payload",
+      "file": "corrupt-payload.frame",
+      "bytes": 262189,
+      "sha256": "8cc66ca718dc0906c439bb7b7ba9e68ffe24140aea3ed0438ef50e3b03b84530",
+      "expected_request": {},
+      "expected_result": "Integrity"
+    },
+    {
+      "case": "wrong-magic",
+      "file": "wrong-magic.frame",
+      "bytes": 262189,
+      "sha256": "7635caa13fc2d33e15bd6a8d15217ed5a7e45c05af95e2da988b4445fa2c4c90",
+      "expected_request": {},
+      "expected_result": "Framing"
+    },
+    {
+      "case": "invalid-status",
+      "file": "invalid-status.frame",
+      "bytes": 262189,
+      "sha256": "a8a9fee57527e81d62357ebd4836379e2c7f2c110ca3132b0f8cfb6500bc0075",
+      "expected_request": {},
+      "expected_result": "Framing"
+    },
+    {
+      "case": "truncated",
+      "file": "truncated.frame",
+      "bytes": 262188,
+      "sha256": "5d86e83a45d5216774568db1f2d0456e882566c3fe51a34a6864909ba815cc84",
+      "expected_request": {},
+      "expected_result": "Framing"
+    },
+    {
+      "case": "extra-byte",
+      "file": "extra-byte.frame",
+      "bytes": 262190,
+      "sha256": "2475f8834d5f5b4429ed329e1e923f63d01dc1d370c27e70904489e9a74188ac",
+      "expected_request": {},
+      "expected_result": "Framing"
+    },
+    {
+      "case": "wrong-length",
+      "file": "wrong-length.frame",
+      "bytes": 262189,
+      "sha256": "055f4d4280a1117716abb561b9bdebf0986aa93fe443b4f158e0670027fede32",
+      "expected_request": {},
+      "expected_result": "Framing"
+    },
+    {
+      "case": "wrong-nonce",
+      "file": "wrong-nonce.frame",
+      "bytes": 262189,
+      "sha256": "b4051b2b336504036c6f8da27814652473ba7f72a956923159acdbe4f2b85762",
+      "expected_request": {
+        "nonce": "3434343434343434343434343434343434343434343434343434343434343434"
+      },
+      "expected_result": "RequestContext"
+    },
+    {
+      "case": "wrong-object",
+      "file": "wrong-object.frame",
+      "bytes": 262189,
+      "sha256": "b4051b2b336504036c6f8da27814652473ba7f72a956923159acdbe4f2b85762",
+      "expected_request": {
+        "object_id": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "expected_result": "ObjectPolicy"
+    },
+    {
+      "case": "unavailable-with-payload",
+      "file": "unavailable-with-payload.frame",
+      "bytes": 46,
+      "sha256": "7c47d4d1a371816e97a470ccd718a17503064fdb6a3ccda1ad38bae5aafb3fb7",
+      "expected_request": {},
+      "expected_result": "Framing"
+    },
+    {
+      "case": "empty",
+      "file": "empty.frame",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_request": {},
+      "expected_result": "Framing"
+    },
+    {
+      "case": "header-only",
+      "file": "header-only.frame",
+      "bytes": 45,
+      "sha256": "88b1c4e1f9ba53edd53ebbd69002fef512e7b07ba3226fe2c233d384b4295372",
+      "expected_request": {},
+      "expected_result": "Framing"
+    },
+    {
+      "case": "zero-payload",
+      "file": "zero-payload.frame",
+      "bytes": 262189,
+      "sha256": "da377eafd12a0e884dbaa4b872ae5111d78a4b9a761071fa822b92f90aabc5b1",
+      "expected_request": {},
+      "expected_result": "Integrity"
+    }
+  ]
+}
