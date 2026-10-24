@@ -1,58 +1,55 @@
-# Public research status - 21 October 2026
+# Public research status - through M19
 
-This file records public-release evidence, not the entire engineering workspace.
+Publication date: 24 October 2026. This release is a selected-source overlay,
+not the complete development workspace and not a mainnet release.
 
-## Current public export
+## Available in this repository
 
-The new finite pack adds Python models, separate exact reference checking,
-synthetic request/frame fixtures and mutation tests. The existing Rust source,
-Cargo manifests, dependency lockfile and license files are unchanged.
+The previously published CWC serial/parallel model, verification-only Groth16
+component, resource-accounting controls, local byte-observation example and finite
+Python dataset remain available. This overlay adds the M19 causal byte/history
+experiment, its eight tests, a retained M17 native Rank vector and a compact
+Python reference for selected M14/M18 results and byte encodings.
 
-The executed package checks and known gaps are recorded in
-[VALIDATION_2026-10-21.md](VALIDATION_2026-10-21.md). A reader can reproduce the new
-checks without network access, a project account or any additional packages.
+## Engineering results versus this public export
 
-## Historical public validation
+| Checkpoint | Recorded full engineering workspace | Public verification boundary |
+| --- | --- | --- |
+| M14 | 1,034 passed; 0 failed; 8 ignored | Compact sixteen-profile Python reference; no DAG corpus export |
+| M15 | 1,042 passed; 0 failed; 8 ignored | Exact-intent specification and retained context; native relation not exported |
+| M16 | 1,051 passed; 0 failed; 8 ignored | Bound/accounting specification; full finite corpus not exported |
+| M17 | 1,057 passed; 0 failed; 8 ignored | Retained full-pair digest vector and downstream Rust check |
+| M18 | No new Rust execution; M17 results reused | Two finite selection/conditioning references |
+| M19 | 1,065 passed; 0 failed; 8 ignored | Causal byte adapter, semantic reference and eight public test functions |
 
-The original v0.1.0 release recorded successful fmt, locked all-target Clippy,
-workspace tests and build on Linux x86-64. Its default workspace had 41 passing
-Rust tests, zero failures. The optional CWC run had 38 passes with overlap;
-46 distinct tests existed across those configurations. Those totals belong to
-that original source only. The retained record reports Rust 1.99.0; the declared
-minimum 1.88 and other-platform runtime were not tested in that release record.
+These are reported historical engineering counts, not independently reproduced
+public totals. Do not sum checkpoints, repeats or model worlds as unique tests.
+Hosted CI for these engineering checkpoints remained pending at their source
+freezes. Historical M17 validation includes a corrected test-iterator lint and a
+restored-log parser reconciliation; neither failure is evidence that this public
+package was built. M19 also retained pre-corpus lint/formatting corrections.
 
-The October 19 accounting addendum added eleven Rust test definitions but did
-not claim a separately executed public result. The October 20 byte-observation
-adaptation added 23 Rust test definitions and twelve executed Python reference
-tests. Compilation, Clippy, actual Rust IPC output and full Rust regression for
-that adapted source were not executed in its packaging environment.
+## Checks made when assembling this overlay
 
-The workflow mentioned by an earlier package was removed before public upload.
-No workflow is included now. Hosted CI remains unverified. This update corrects
-those obsolete workflow descriptions instead of promising an automatic run.
+No Rust compiler, Cargo build/test, rustfmt, Clippy or hosted workflow was run.
+Source transfer, public path/dependency review, golden-byte reconstruction and
+archive/integrity/privacy checks are separate from runtime validation. The
+selected standard-library Python references were run normally and under -O;
+the report identifies their limited scope. Downstream Rust results are pending.
 
-## Broader project progress, not a public validation claim
+All original Rust test predicates are retained in the exported M19 adapter;
+serialization-only adaptation means this is nevertheless a new public source
+composition requiring its own runtime checks before a new pass claim.
 
-Internal research has advanced through joint statement binding, byte-observation
-experiments, sampled-pair and repeated-audit models, complete-public-view
-conditioning and first-hit controls. The latest reported engineering workspace
-has 968 Rust passes, zero failures and eight parent-invoked helper fixtures.
-That broader workspace is not included here. This report does not transfer its
-result to the smaller adapted public export or imply an external audit.
+## What remains open
 
-This release shares selected elementary finite controls and public synthetic
-fixtures, not the full protocol transcript, proof construction or consensus
-integration. These portable models were separately generated and checked for
-this release; they are not verbatim copies of the internal execution logs.
+Physical resource scarcity, independent useful demand, resource ownership,
+coalition resistance, global canonical consumption, honest-production and network
+delay assumptions, and distributed consensus safety/finality remain unestablished.
+A local test result or a valid cryptographic proof does not fill those gaps.
+No production asset, wallet, bridge, token migration or service deployment is
+included. Existing prototype platform limitations remain.
 
-## Still not established
-
-- Independent useful-service demand or physical resource scarcity.
-- A global coalition-cost bound for the actual protocol and accumulated history.
-- Safe permissionless eligibility, consensus weight, finality or liveness.
-- A released native chain, migration bridge, mainnet or operational validator.
-- Production networking reliability or mobile/full cross-platform runtime.
-- A new joint Groth16 proof, trusted-setup review or independently audited circuit.
-
-`consensus_eligibility = NotEstablished`
-`consensus_weight = None`
+See [milestone detail](MILESTONES_M14_M19.md),
+[validation scope](VALIDATION_M19_PUBLIC.md),
+[publication scope](PUBLIC_RELEASE_SCOPE.md) and [security](SECURITY.md).

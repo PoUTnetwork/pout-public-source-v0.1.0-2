@@ -1,0 +1,67 @@
+{
+  "classification": "Reported historical engineering results; not executions of this public export",
+  "M14": {
+    "workspace_passed": 1034,
+    "workspace_failed": 0,
+    "workspace_ignored": 8,
+    "selected_four_attempt_scores": {
+      "ordinary": "6/16",
+      "leaky": "7/16",
+      "early_consumed": "6/16"
+    }
+  },
+  "M15": {
+    "workspace_passed": 1042,
+    "workspace_failed": 0,
+    "workspace_ignored": 8,
+    "full_native_relation_exported": false
+  },
+  "M16": {
+    "workspace_passed": 1051,
+    "workspace_failed": 0,
+    "workspace_ignored": 8,
+    "probability_cases": 21086,
+    "joint_cases": 16414,
+    "direct_cases": 4672,
+    "rank_calls": 41806,
+    "fresh_rank_calls": 40010,
+    "repeat_rank_calls": 1796,
+    "full_corpus_exported": false
+  },
+  "M17": {
+    "workspace_passed": 1057,
+    "workspace_failed": 0,
+    "workspace_ignored": 8,
+    "native_experiment_exported": false,
+    "selected_public_rank_vector": true
+  },
+  "M18": {
+    "new_rust_run": false,
+    "quotient_worlds": 512,
+    "successes": 31,
+    "incorrect_bound_numerator": 16,
+    "correct_global_bound_numerator": 256,
+    "denominator": 512,
+    "tiny_worlds": 64,
+    "selected_zero": 48
+  },
+  "M19": {
+    "workspace_passed": 1065,
+    "workspace_failed": 0,
+    "workspace_ignored": 8,
+    "new_tests": 8,
+    "traces": 8,
+    "events": 63,
+    "node_calls": 44,
+    "fresh_nodes": 38,
+    "cached_nodes": 6,
+    "rank_calls": 10,
+    "fresh_ranks": 8,
+    "cached_ranks": 2,
+    "rejections": 9,
+    "request_payload_bytes": 17903,
+    "public_source_adaptations": "report serialization only"
+  },
+  "consensus_eligibility": "NotEstablished",
+  "consensus_weight": null
+}

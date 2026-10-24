@@ -28,34 +28,30 @@ Challenge issuance, timestamps, identity bindings, resource-anchor provenance an
 
 Only selected Rust research components, public synthetic vectors, documentation and license notices are included. No services are deployed and no automated publication workflow is configured. Dependencies come from public crates.io packages fixed by Cargo.lock; normal downstream dependency review still applies.
 
-Validation was performed on Linux x86-64 only. Windows, macOS, Android and iOS runtime behavior is untested. iPhone upload instructions describe transferring files to GitHub, not executing Rust on iOS.
+Historical initial-release validation was performed on Linux x86-64 only. Windows, macOS, Android and iOS runtime behavior is untested. iPhone upload instructions describe transferring files to GitHub, not executing Rust on iOS.
 
 Public source and synthetic fixture fingerprints may permit correlation if other copies become available. Removing private account details does not guarantee anonymity. Required upstream third-party copyright and attribution notices are deliberately preserved.
 
 For a suspected defect, prepare a minimal reproduction using synthetic inputs. Do not attach secrets or real user data to public issue reports. No private reporting channel or response-time commitment is provided in this package.
 
-## Public byte-observation boundaries
+## M14-M19 public addendum
 
-The new retrieval checks bind an exact request and content hash to returned bytes. They do not authenticate the issuer, prove independent demand, measure physical retention or grant eligibility. Caller-selected object manifests must be trusted independently; a manifest carried by an untrusted responder cannot authenticate itself.
+The new M19 byte parser shares no parsing path with its typed-key reference, but
+both are evaluated against declared scripted replies. Agreement is not proof of
+independent uniform native hash behavior. All helper/caller accesses are visible
+by construction; there is no deployed monitor observing private coalition work.
 
-The bounded local consumption key includes the request nonce. Reusing an exact request is different from retrying one demand with a new nonce. This public extract does not implement independent demand-slot authorization or globally canonical consumption.
+A full target must be authenticated before observations when the security model
+requires that premise. Target selection itself can carry information. Cached
+Rank keys retain first-query classification even after later preparation. A new
+caller or service category must not create another sample of the same key. None
+of these local controls establishes economic eligibility or global fork safety.
 
-The byte meter is a standard-library accounting primitive, not an OS/network sandbox. The controller chooses meter ownership and supplies monotonic time. Separate meters can be assigned to one shared resource. Output outside this controlled boundary is outside the model. Late, partial and ambiguous writes remain separate from verified, timely delivery. Neither a meter count nor its quota proves physical links or capacity in bytes per second.
+The M17 digest fixture contains only public synthetic values. A passing digest
+comparison is not a resource-witness check or proof of independently authorized
+policy. The M14/M18 Python references are finite ideal games, not traffic or
+physical-resource benchmarks. M16 counts are reported reference-model bookkeeping.
 
-The public demo uses a fresh controlled directory, known synthetic data, local Unix IPC and per-socket timeouts. It refuses existing output files. It is not a hostile same-user filesystem isolation boundary. The public adaptation does not include the complete internal campaign supervisor. No CI workflow is included. Operators should run the example under an appropriate external process timeout; no arbitrary-input service is deployed.
-
-Do not point the example at personal files or use it to secure assets. Only the defined deterministic fixture is used. No secret material, setup/proving parameters, production endpoints or unpublished consensus construction belongs in this addendum. No external audit or successful Rust validation of the adapted export is claimed before its checks actually run.
-
-
-## Finite datasets and evidence validation
-
-The new exact four-bit/bucket models are deliberately tiny, fully disclosed
-reference games. Their success rates do not certify real provider behavior.
-The synthetic frame corpus is generated from the existing deterministic public
-recipe and is not captured from a new network or Rust execution. The full input
-inventory and negative cases are checked; explicit validation remains enabled
-under optimized Python. Test rows, iterations and repeated invocations must not
-be counted as unique test functions.
-
-The broader engineering result is not a public Rust validation. No raw private
-execution reports, runtime secrets or operational endpoints are included.
+No Rust build or test execution was performed when packaging this update. The
+new public composition, including its report-format adaptation, has no newly
+claimed runtime validation. Historical engineering counts are kept separate.

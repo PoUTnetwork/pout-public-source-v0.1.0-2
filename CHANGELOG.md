@@ -1,26 +1,26 @@
 # Changelog
 
-## Public finite-reference update - October 21, 2026
+## Public research update through M19 - October 24, 2026
 
-- Add exact four-bit sampled-pair reference models and a separate list/character-based checker.
-- Publish all 65,536 advice encoders, 256 response tables, 64 target rows, twelve fixed-strategy repeated-audit rows, 154 bucket-advice profiles and two small public-information counterexamples.
-- Add 128 deterministic request vectors, 32 chunk known answers and sixteen synthetic byte frames with explicit expected acceptance/rejection layers.
-- Add 40 new Python unit/mutation tests; the runner also executes the twelve existing Python reference tests (52 unique tests, not multiple-run totals).
-- Check the same suite under normal and optimized Python; explicit validation does not disappear under optimization.
-- Add clearly labeled README-only publication markers under blockchain/.
-- Correct obsolete references to an included Actions workflow. No workflow or Cargo dependency change is included.
-- Refresh the complete source manifest for the merged public tree.
+- Added the M19 causal byte/history experiment, semantic reference, eight test
+  functions, retained failure-sticky initializer, golden byte frames and example.
+- Adapted reporting only to preserve the existing Cargo dependency set.
+- Added a compact M14/M18 finite Python reference, retained M17 Rank vector and
+  downstream BLAKE3 check, plus explicit M15/M16/M17 public review boundaries.
+- Updated research, architecture, security, reproduction and publication scope.
+- Refreshed the root source manifest for the merged public repository.
+- No Rust build/test or hosted workflow was run. No automated publication added.
 
-## October 20, 2026 — Public byte-observation review export
+## Public finite-model update - October 21, 2026
 
-- Add selected requested-byte verification and atomic, nonrefilling byte-budget primitives.
-- Add a deterministic actual-file/local-Unix-IPC example and 23 Rust regression definitions.
-- Add an independent Python reference and read-only source-manifest checker.
-- Extend the existing resource-controls example with an explicit invalid-relation rejection.
-- Update existing architecture, security, research-status, example and test documentation.
-- The initial package proposed a public-source CI workflow; that file was removed before upload. Rust validation of this export remains pending; no inherited engineering-suite result is claimed for it.
-- Keep CWC/Groth16 libraries, Cargo.toml, Cargo.lock and third-party notices unchanged.
+- Earlier finite reference dataset, framing fixtures, Python checks and integrity
+  manifest remain unchanged by this overlay. Its validation scope remains in
+  docs/VALIDATION_2026-10-21.md.
 
+## Public byte-observation update - October 20, 2026
+
+- Earlier local requested-byte observation and shared byte-budget controls remain
+  available. Their local IPC and synthetic-data limitations remain unchanged.
 
 ## Research addendum — October 19, 2026 (validation pending)
 

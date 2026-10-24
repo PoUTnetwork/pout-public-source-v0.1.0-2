@@ -1,110 +1,109 @@
 # PoUT Network - Public Research Prototype
 
-Selected, independently inspectable research components for Proof of Useful Traffic.
-This repository is not a production blockchain, a running service or a verified
-useful-traffic consensus mechanism. The present update adds reproducible finite
-models and public test vectors; it does not activate consensus or token migration.
+Selected research components for Proof of Useful Traffic, with the publication
+boundary extended through M19. This is not a production blockchain, running
+service, or verified useful-traffic consensus mechanism.
 
-## Included components
+This is a source update for the existing repository. Earlier public CWC,
+verification, byte-observation and finite-model files remain in place. No Cargo
+manifest, dependency lockfile, license file or operational service is changed.
 
-| Area | Public contents | Important boundary |
+## What this update exposes
+
+| Research area | Included public material | Boundary |
 | --- | --- | --- |
-| CWC execution | Rust serial reference and bounded parallel candidate execution | Not BlockDAG ordering or consensus admission |
-| Cryptographic verification | Groth16 verification over BLS12-381 and public synthetic fixtures | No proving circuit, setup generator or prover in this export |
-| Accounting controls | Finite challenge, expiry, replay and key-family models | Assumed authorities are not independent demand |
-| Requested bytes and budgets | Rust integrity checks, local Unix-stream example and shared byte-budget controls | Installed quotas do not attest physical links or independent storage |
-| Finite information models | Standard-library Python programs, exact tables and independent cross-checks | Four-bit/bucket games are not a resource-hardness proof |
-| Blockchain directory | Publication-boundary notices for selected research areas | READMEs only; no executable blockchain code is provided there |
+| M14 distinct opportunities | Executable finite reference for sixteen small profiles | Public adaptation; not the complete engineering optimizer or DAG corpus |
+| M15 exact-intent binding | Field-level specification and a retained exact-intent/target vector | Full native resource relation is not included |
+| M16 rank/work composition | Conditional bound, separated accounting and reported scope | Full 21,086-case native research corpus is not reproduced by this package |
+| M17 Rank/threshold | Retained full-pair input and BLAKE3 digest; Rust digest check | Does not regenerate the resource witness or verify threshold authority |
+| M18 helper-selected targets | Executable 512-world quotient and 64-world conditioning references | Defined ideal laws and symbolic costs, not physical-resource measurements |
+| M19 causal history | Rust byte machine, semantic reference, eight inspections and golden encodings | Scripted finite replies; no native hash randomness or global observation proof |
 
-## Reproduce the new public dataset
+[Milestone details](docs/MILESTONES_M14_M19.md) distinguish reported engineering
+results from material that can actually be reproduced in this public workspace.
+The complete proving circuit, setup generator, prover and operational stack
+remain outside the publication boundary. Later milestones are not included.
 
-Python 3.10 or newer; no extra packages, account, credentials or network required:
+## Review the selected references
+
+Python 3.10 or later, standard library only:
+
+```sh
+python3 -I -B research/milestones/reproduce.py
+python3 -I -B -O research/milestones/reproduce.py
+```
+
+This recomputes selected M14 and M18 finite probabilities, checks M19 byte goldens,
+and reconstructs the retained M17 Rank input. It does not execute Rust or BLAKE3.
+The two invocations repeat the same references; do not add their counts.
+
+The existing public finite dataset remains available:
 
 ```sh
 python3 -I -B scripts/check_research_pack.py
-python3 -I -B -O scripts/check_research_pack.py
 ```
 
-These commands run 52 Python unit/mutation tests, check all 65,536 one-bit encoder
-rows, independently recompute the finite reference tables, and verify 16 public
-synthetic byte-frame cases. The two invocations repeat the same tests; their
-counts must not be added. Mandatory checks remain active under optimization.
+## Rust commands for downstream review
 
-The first-hit dataset is a small fixed bucket-advice model. The repeated-audit
-dataset evaluates one explicitly fixed two-table strategy. Neither is a release
-of the complete protocol construction or a general attack optimizer.
-
-To regenerate the mathematical fixture bytes in a new directory:
+Run these from the merged repository, not the update ZIP alone:
 
 ```sh
-python3 -I -B research/finite-models/generate.py /tmp/pout-public-finite-new
+cargo test --locked -p pout-public-verifier --test causal_byte_bridge
+cargo run --locked -p pout-public-verifier --example causal_byte_bridge
+cargo test --locked -p pout-cwc-research --test rank_public_vector
 ```
 
-An existing output directory is refused. Inspect [finite model scope](docs/FINITE_MODELS.md),
-[data schemas](tests/fixtures/README.md) and [exact validation scope](docs/VALIDATION_2026-10-21.md).
+The M19 experiment logic and eight inspection/guard tests come from the M19
+source snapshot. Serialization-only adaptations avoid adding dependencies:
+Serde derives are omitted and bounded text output replaces JSON output.
+[Exact export changes](docs/VALIDATION_M19_PUBLIC.md) are recorded separately.
 
-## Rust workspace
+No Rust build, Rust test suite, rustfmt, Clippy or hosted workflow was run to
+prepare this update. The reported 1,065-test engineering result is historical
+and is not a validation result for this adapted public workspace.
 
-The existing manifests declare Rust 1.88 or newer. This update does not modify
-Rust source, Cargo manifests or Cargo.lock, and adds no dependencies.
-A clean Rust build normally downloads the public packages in Cargo.lock.
+The existing manifests declare Rust 1.88 or newer. That minimum and other
+platforms have not been newly tested for this update. Normal clean builds may
+need public dependency downloads specified by Cargo.lock.
+
+## Existing demonstrations
 
 ```sh
-cargo fmt --all -- --check
-cargo clippy --locked --workspace --all-targets -- -D warnings
-cargo test --locked --workspace
-cargo build --locked --workspace
-cargo test --locked -p pout-cwc-research --all-features --all-targets
 cargo run --locked -p pout-cwc-research --example demo
 cargo run --locked -p pout-public-verifier --example verify_fixtures
 cargo run --locked -p pout-public-verifier --example resource_controls
 ```
 
-The original v0.1.0 Rust validation remains scoped to that historical release.
-The later adapted byte-observation Rust export still needs its own complete Rust
-validation. The 968-test engineering-workspace result is not a result for this
-public workspace and is not used to certify it. No new Rust execution or hosted
-CI success is claimed by this package. There is no included Actions workflow.
+Existing service-observation material uses local IPC, not internet-bandwidth
+measurement. Existing Groth16 material is verification-only, with synthetic
+public fixtures; it does not expose the proving circuit or establish scarce work.
+The `blockchain/` directories contain publication-boundary notices, not a deployed
+blockchain implementation.
 
-## Byte-observation example
-
-The public fixture is deterministic and deliberately compressible. It is not
-secret, unpredictable, production-sized storage evidence or real customer data.
-The existing example performs local IPC, not an internet throughput benchmark.
-
-```sh
-python3 -I -B scripts/check_observation.py --self-test
-cargo test --locked -p pout-public-verifier --test service_observation --test byte_budget
-cargo run --locked -p pout-public-verifier --example service_observation -- /tmp/pout-public-observation-new
-python3 -I -B scripts/check_observation.py --check-demo /tmp/pout-public-observation-new
-```
-
-Use a new directory under a controlled parent. The last command requires outputs
-from an actual Rust run. The bundled `.frame` files are generated fixtures, not
-captures falsely presented as an executed Rust or network experiment.
-
-## Integrity and publication scope
+## Integrity
 
 ```sh
 python3 -I -B scripts/check_source_manifest.py
 ```
 
-Run this on the complete merged repository, not on the update overlay alone.
-The source manifest excludes itself. All inherited license notices must remain.
-[Release scope](docs/PUBLIC_RELEASE_SCOPE.md) explains which components are included
-and withheld. The `blockchain/` notices are not evidence of deployed modules.
+Run on the complete merged repository. The updated manifest covers the inherited
+files and this overlay, excluding the manifest itself. Inherited entries were
+carried from the published baseline; new/changed files were hashed for this ZIP.
 
-## Further reading
+## Documentation
 
 - [Architecture](docs/ARCHITECTURE.md)
 - [CWC model](docs/CWC_MODEL.md)
-- [Public verification format](docs/PUBLIC_VERIFICATION.md)
-- [Byte observation](docs/RESOURCE_OBSERVATION.md)
-- [Finite models](docs/FINITE_MODELS.md)
+- [Verification format](docs/PUBLIC_VERIFICATION.md)
+- [Existing byte observation](docs/RESOURCE_OBSERVATION.md)
+- [Earlier finite models](docs/FINITE_MODELS.md)
+- [M14-M19 research](docs/MILESTONES_M14_M19.md)
+- [M19 public validation boundary](docs/VALIDATION_M19_PUBLIC.md)
 - [Research status](docs/RESEARCH_STATUS.md)
 - [Security limits](docs/SECURITY.md)
-- [Third-party licenses](THIRD_PARTY_LICENSES.md)
+- [Publication scope](docs/PUBLIC_RELEASE_SCOPE.md)
+- [Dependency licenses](THIRD_PARTY_LICENSES.md)
 
-Project source is offered under MIT OR Apache-2.0. Dependencies retain their own
-licenses and required notices. No external audit, mainnet readiness, price,
-return, independent-resource certification or token entitlement is established.
+Project source is offered under MIT OR Apache-2.0. Existing license and upstream
+attribution files must remain. No external audit, production readiness, resource
+scarcity, token entitlement, price or return is established by this package.
