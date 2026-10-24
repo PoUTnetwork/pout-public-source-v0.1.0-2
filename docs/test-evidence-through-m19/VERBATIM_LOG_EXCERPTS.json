@@ -1,0 +1,86 @@
+{
+  "classification": "SELECTED_EXCERPTS_ONLY_NOT_FULL_ORIGINAL_LOGS",
+  "excerpts": [
+    {
+      "milestone": "Round 4",
+      "original_raw_log_git_blob_sha1": "d7ff3852af3b8d8f429ad1c730e5fc568bd782d8",
+      "original_log_chars": 13508,
+      "observed_cargo_group_result_lines": 23,
+      "verbatim_excerpt_from_original_log": "test result: ok. 17 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s",
+      "original_log_included": false,
+      "excerpt_not_full_log": true
+    },
+    {
+      "milestone": "Round 5",
+      "original_raw_log_git_blob_sha1": "cd518703dab0af620358b629b962287caa312838",
+      "original_log_chars": 15113,
+      "observed_cargo_group_result_lines": 24,
+      "verbatim_excerpt_from_original_log": "test result: ok. 23 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.30s",
+      "original_log_included": false,
+      "excerpt_not_full_log": true
+    },
+    {
+      "milestone": "Round 6",
+      "original_raw_log_git_blob_sha1": "8cde902cf803e5111faa2af028779ba6495eae2c",
+      "original_log_chars": 27013,
+      "observed_cargo_group_result_lines": 25,
+      "verbatim_excerpt_from_original_log": "test result: ok. 63 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 2.68s",
+      "original_log_included": false,
+      "excerpt_not_full_log": true
+    },
+    {
+      "milestone": "M9",
+      "original_raw_log_git_blob_sha1": "091038cad2c3e47a4b50c3a21af146adebdfa90d",
+      "original_log_chars": 115411,
+      "observed_cargo_group_result_lines": 77,
+      "verbatim_excerpt_from_original_log": "test result: ok. 106 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 24.96s",
+      "original_log_included": false,
+      "excerpt_not_full_log": true
+    },
+    {
+      "milestone": "M14",
+      "original_raw_log_git_blob_sha1": "7092adaf01239ba353a50f2a4984699602650a38",
+      "original_log_chars": 111449,
+      "observed_cargo_group_result_lines": 84,
+      "verbatim_excerpt_from_original_log": "test result: ok. 111 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 33.47s",
+      "original_log_included": false,
+      "excerpt_not_full_log": true
+    },
+    {
+      "milestone": "M15",
+      "original_raw_log_git_blob_sha1": "ee094c29b387f70571240be7a868ac0be6a7b7ad",
+      "original_log_chars": 112472,
+      "observed_cargo_group_result_lines": 85,
+      "verbatim_excerpt_from_original_log": "test result: ok. 111 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 33.65s",
+      "original_log_included": false,
+      "excerpt_not_full_log": true
+    },
+    {
+      "milestone": "M16",
+      "original_raw_log_git_blob_sha1": "ffa287ecbd0a4600ea0e03bbfc5c4861e2c6fb05",
+      "original_log_chars": 113449,
+      "observed_cargo_group_result_lines": 86,
+      "verbatim_excerpt_from_original_log": "test result: ok. 111 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 34.34s",
+      "original_log_included": false,
+      "excerpt_not_full_log": true
+    },
+    {
+      "milestone": "M17",
+      "original_raw_log_git_blob_sha1": "8e948afdab47bdc8d91a55504e64923afee42f5d",
+      "original_log_chars": 121031,
+      "observed_cargo_group_result_lines": 87,
+      "verbatim_excerpt_from_original_log": "test result: ok. 111 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 28.73s",
+      "original_log_included": false,
+      "excerpt_not_full_log": true
+    },
+    {
+      "milestone": "M19",
+      "original_raw_log_git_blob_sha1": "68b02a74f9f5ca5a673ae15484199f64389b9057",
+      "original_log_chars": 116601,
+      "observed_cargo_group_result_lines": 88,
+      "verbatim_excerpt_from_original_log": "test result: ok. 111 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 18.00s",
+      "original_log_included": false,
+      "excerpt_not_full_log": true
+    }
+  ]
+}

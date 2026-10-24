@@ -1,0 +1,129 @@
+{
+  "consensus_eligibility": "NotEstablished",
+  "m14": {
+    "classification": "finite public reference; not native work",
+    "profiles": [
+      {
+        "budget": 2,
+        "mode": "ordinary",
+        "successes": 1,
+        "worlds": 16
+      },
+      {
+        "budget": 3,
+        "mode": "ordinary",
+        "successes": 3,
+        "worlds": 16
+      },
+      {
+        "budget": 4,
+        "mode": "ordinary",
+        "successes": 6,
+        "worlds": 16
+      },
+      {
+        "budget": 2,
+        "mode": "leaky",
+        "successes": 1,
+        "worlds": 16
+      },
+      {
+        "budget": 3,
+        "mode": "leaky",
+        "successes": 3,
+        "worlds": 16
+      },
+      {
+        "budget": 4,
+        "mode": "leaky",
+        "successes": 7,
+        "worlds": 16
+      },
+      {
+        "budget": 2,
+        "mode": "early",
+        "successes": 1,
+        "worlds": 16
+      },
+      {
+        "budget": 3,
+        "mode": "early",
+        "successes": 3,
+        "worlds": 16
+      },
+      {
+        "budget": 4,
+        "mode": "early",
+        "successes": 6,
+        "worlds": 16
+      },
+      {
+        "budget": 3,
+        "mode": "warm_ordinary",
+        "successes": 3,
+        "worlds": 4
+      },
+      {
+        "budget": 3,
+        "mode": "warm_leaky",
+        "successes": 4,
+        "worlds": 4
+      },
+      {
+        "budget": 3,
+        "mode": "warm_early",
+        "successes": 3,
+        "worlds": 4
+      },
+      {
+        "budget": 2,
+        "mode": "correlated",
+        "successes": 1,
+        "worlds": 4
+      },
+      {
+        "budget": 3,
+        "mode": "correlated",
+        "successes": 2,
+        "worlds": 4
+      },
+      {
+        "budget": 4,
+        "mode": "correlated",
+        "successes": 3,
+        "worlds": 4
+      },
+      {
+        "budget": 4,
+        "mode": "alias",
+        "successes": 0,
+        "worlds": 4
+      }
+    ]
+  },
+  "m18": {
+    "classification": "ideal finite reference; symbolic costs, no native hashing",
+    "complete_tiny_worlds": 64,
+    "fresh_rank_queries": 62,
+    "global_charged_bound": "1/2",
+    "helper_queries": 1024,
+    "incorrect_online_only_bound": "1/32",
+    "quotient_worlds": 512,
+    "rank_passes": 32,
+    "recipient_queries": 310,
+    "selected": 62,
+    "selected_label_zero": 48,
+    "successes": 31,
+    "target_counts": [
+      32,
+      32
+    ]
+  },
+  "public_byte_vectors": {
+    "m17_blake3_executed_here": false,
+    "m17_rank_bytes": 821,
+    "m19_node_bytes": 241,
+    "m19_rank_bytes": 438
+  },
+  "rust_executed": false
+}

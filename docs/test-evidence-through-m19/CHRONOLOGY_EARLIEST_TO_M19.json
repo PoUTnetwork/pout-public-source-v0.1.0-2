@@ -1,0 +1,406 @@
+{
+  "classification": "combined historical source-specific record; not a complete raw test-log archive",
+  "covered_checkpoints": 40,
+  "entries": [
+    {
+      "checkpoint": "Phase 5",
+      "date": "2026-10-13",
+      "passed": 100,
+      "failed": 0,
+      "ignored": 0,
+      "groups": 22,
+      "evidence_kind": "original-Cargo-group-extract",
+      "note": "Original Cargo test result groups inspected: 100/0/0; earliest separately documented workspace run located in this audit; Phase 1–4 originals not claimed."
+    },
+    {
+      "checkpoint": "Round 4",
+      "date": "2026-10-13",
+      "passed": 125,
+      "failed": 0,
+      "ignored": 0,
+      "groups": 23,
+      "evidence_kind": "original-Cargo-group-extract",
+      "note": "Round4 workspace pass; authenticated TLS and recovery use finite mock credits."
+    },
+    {
+      "checkpoint": "Round 5",
+      "date": "2026-10-14",
+      "passed": 142,
+      "failed": 0,
+      "ignored": 0,
+      "groups": 24,
+      "evidence_kind": "original-Cargo-group-extract",
+      "note": "Round5 workspace pass; 512 MiB restart/resume acceptance scoped to the recorded test."
+    },
+    {
+      "checkpoint": "Round 6",
+      "date": "2026-10-14",
+      "passed": 192,
+      "failed": 0,
+      "ignored": 2,
+      "groups": 25,
+      "evidence_kind": "original-Cargo-group-extract",
+      "note": "Rust test pass does not imply unattended acceptance: scenario required a second SIGINT."
+    },
+    {
+      "checkpoint": "Round 7A",
+      "date": "2026-10-15",
+      "passed": null,
+      "failed": null,
+      "ignored": null,
+      "groups": null,
+      "evidence_kind": "maintained-source status",
+      "note": "Specific sustained/restart acceptance passed; full Round 7 reliability gate not closed. No stand-alone Rust total asserted here."
+    },
+    {
+      "checkpoint": "Round 7B",
+      "date": "2026-10-15",
+      "passed": 338,
+      "failed": 0,
+      "ignored": 5,
+      "groups": null,
+      "evidence_kind": "maintained-source status",
+      "note": "Rust suite passed, but representative sustained network run FAILED. Do not claim green operational acceptance."
+    },
+    {
+      "checkpoint": "Round 7C",
+      "date": "2026-10-16",
+      "passed": 346,
+      "failed": 0,
+      "ignored": null,
+      "groups": null,
+      "evidence_kind": "maintained-source status",
+      "note": "Final candidate Rust tests passed; representative full sustained run FAILED, and hosted quota test failed."
+    },
+    {
+      "checkpoint": "First CWC prototype",
+      "date": "2026-10-17",
+      "passed": 444,
+      "failed": 0,
+      "ignored": 6,
+      "groups": 44,
+      "evidence_kind": "original-Cargo-group-extract",
+      "note": "Original Cargo test groups inspected: 444/0/6. CWC is isolated mechanical research, not consensus."
+    },
+    {
+      "checkpoint": "CWC milestone B",
+      "date": "2026-10-17",
+      "passed": 476,
+      "failed": 0,
+      "ignored": 7,
+      "groups": null,
+      "evidence_kind": "maintained-source status",
+      "note": "Hosted Ubuntu full-suite historical result; not combined with other platforms."
+    },
+    {
+      "checkpoint": "Pre-overnight resource research",
+      "date": "2026-10-18",
+      "passed": 759,
+      "failed": 0,
+      "ignored": 7,
+      "groups": null,
+      "evidence_kind": "maintained-source status",
+      "note": "Locally validated prior cryptographic experiments; physical scarcity still open."
+    },
+    {
+      "checkpoint": "Overnight Stage 1",
+      "date": "2026-10-18",
+      "passed": 762,
+      "failed": 0,
+      "ignored": 7,
+      "groups": null,
+      "evidence_kind": "maintained-source status",
+      "note": "Executed source-specific workspace; three new tests included."
+    },
+    {
+      "checkpoint": "Overnight Stage 2",
+      "date": "2026-10-18",
+      "passed": 766,
+      "failed": 0,
+      "ignored": 7,
+      "groups": null,
+      "evidence_kind": "maintained-source status",
+      "note": "Executed source-specific workspace; four focused tests included."
+    },
+    {
+      "checkpoint": "Resource policy",
+      "date": "2026-10-19",
+      "passed": 836,
+      "failed": 0,
+      "ignored": 7,
+      "groups": 58,
+      "evidence_kind": "maintained-source status",
+      "note": "Freshness and finite logical resource accounting; no scarce physical resource established."
+    },
+    {
+      "checkpoint": "Native ratchet",
+      "date": "2026-10-19",
+      "passed": 846,
+      "failed": 0,
+      "ignored": 7,
+      "groups": 59,
+      "evidence_kind": "maintained-source status",
+      "note": "Source-specific workspace pass; 10 focused regressions included in the workspace total."
+    },
+    {
+      "checkpoint": "Ratchet binding equations",
+      "date": "2026-10-20",
+      "passed": 865,
+      "failed": 0,
+      "ignored": 7,
+      "groups": 62,
+      "evidence_kind": "maintained-source status",
+      "note": "Equation checks; 6 SAT and 31 expected UNSAT local evaluations. Not independent proof of service."
+    },
+    {
+      "checkpoint": "J1",
+      "date": "2026-10-20",
+      "passed": 870,
+      "failed": 0,
+      "ignored": 7,
+      "groups": 63,
+      "evidence_kind": "original-Cargo-group-extract",
+      "note": "Original Cargo test result groups inspected: 870/0/7; five new focused joint tests included. Physical-resource lower bound not established."
+    },
+    {
+      "checkpoint": "J2",
+      "date": "2026-10-20",
+      "passed": 870,
+      "failed": 0,
+      "ignored": 7,
+      "groups": 63,
+      "evidence_kind": "maintained-source status",
+      "note": "Reuses source-identical J1 workspace gate; separate J2 controls executed. No new 870-test Rust run."
+    },
+    {
+      "checkpoint": "J3",
+      "date": "2026-10-20",
+      "passed": 880,
+      "failed": 0,
+      "ignored": 7,
+      "groups": 65,
+      "evidence_kind": "maintained-source status",
+      "note": "Ultimately locally validated after preserved initial permission failure and a separate 1800-second stop; 880/0/7 final gate. No original raw log redistributed."
+    },
+    {
+      "checkpoint": "R1",
+      "date": "2026-10-20",
+      "passed": 891,
+      "failed": 0,
+      "ignored": 7,
+      "groups": 66,
+      "evidence_kind": "original-Cargo-group-extract",
+      "note": "Original Cargo result groups inspected: 891/0/7. 4,194,304 local IPC payload bytes, not internet traffic."
+    },
+    {
+      "checkpoint": "R2",
+      "date": "2026-10-20",
+      "passed": 901,
+      "failed": 0,
+      "ignored": 7,
+      "groups": 67,
+      "evidence_kind": "maintained-source status",
+      "note": "Local shared-egress accounting; physical link independence unproven. Preserved default-sandbox socket failure."
+    },
+    {
+      "checkpoint": "R3",
+      "date": "2026-10-20",
+      "passed": 909,
+      "failed": 0,
+      "ignored": 7,
+      "groups": 68,
+      "evidence_kind": "maintained-source status",
+      "note": "Local aggregate shared-source reconstruction negative result; no independent replica count."
+    },
+    {
+      "checkpoint": "M1",
+      "date": "2026-10-21",
+      "passed": 946,
+      "failed": 0,
+      "ignored": 8,
+      "groups": 72,
+      "evidence_kind": "historical report / source-specific local validation",
+      "note": "Reused 946/0/8 Rust suite from identical-source audit; new mathematical reference separately executed, no new Rust suite."
+    },
+    {
+      "checkpoint": "M2",
+      "date": "2026-10-21",
+      "passed": 955,
+      "failed": 0,
+      "ignored": 8,
+      "groups": 74,
+      "evidence_kind": "historical report / source-specific local validation",
+      "note": "Nine focused tests included in the 955 total; initial Clippy failure was corrected and retained."
+    },
+    {
+      "checkpoint": "M3",
+      "date": "2026-10-21",
+      "passed": 955,
+      "failed": 0,
+      "ignored": 8,
+      "groups": 74,
+      "evidence_kind": "historical report / source-specific local validation",
+      "note": "Rust results reused from M2; Python reference executed 93,855 named visits."
+    },
+    {
+      "checkpoint": "M4",
+      "date": "2026-10-21",
+      "passed": 961,
+      "failed": 0,
+      "ignored": 8,
+      "groups": 75,
+      "evidence_kind": "historical report / source-specific local validation",
+      "note": "Two intentionally failing red tests and subsequent fixes; six focused tests and full workspace passed after correction."
+    },
+    {
+      "checkpoint": "M5",
+      "date": "2026-10-21",
+      "passed": 961,
+      "failed": 0,
+      "ignored": 8,
+      "groups": 75,
+      "evidence_kind": "historical report / source-specific local validation",
+      "note": "Rust results reused from M4; separate Python analysis, 17,267,811 named events."
+    },
+    {
+      "checkpoint": "M6",
+      "date": "2026-10-21",
+      "passed": 968,
+      "failed": 0,
+      "ignored": 8,
+      "groups": 76,
+      "evidence_kind": "historical report / source-specific local validation",
+      "note": "Seven new tests; 20,257,732 logical focused model events. Included in 968 total."
+    },
+    {
+      "checkpoint": "M7",
+      "date": "2026-10-21",
+      "passed": 968,
+      "failed": 0,
+      "ignored": 8,
+      "groups": 76,
+      "evidence_kind": "historical report / source-specific local validation",
+      "note": "Rust results reused from M6; Python reference 38,629 events and 14,635 independent checks."
+    },
+    {
+      "checkpoint": "M8",
+      "date": "2026-10-21",
+      "passed": 968,
+      "failed": 0,
+      "ignored": 8,
+      "groups": 76,
+      "evidence_kind": "historical report / source-specific local validation",
+      "note": "Rust results reused from M6; 56 finite reference profiles, 283,576 named events, 53,437 callbacks."
+    },
+    {
+      "checkpoint": "M9",
+      "date": "2026-10-21",
+      "passed": 980,
+      "failed": 0,
+      "ignored": 8,
+      "groups": 77,
+      "evidence_kind": "historical report / source-specific local validation",
+      "note": "Locked workspace test passed; local CI pending."
+    },
+    {
+      "checkpoint": "M10",
+      "date": "2026-10-21",
+      "passed": 988,
+      "failed": 0,
+      "ignored": 8,
+      "groups": 78,
+      "evidence_kind": "historical report / source-specific local validation",
+      "note": "Locked workspace test passed; local CI pending."
+    },
+    {
+      "checkpoint": "M11",
+      "date": "2026-10-21",
+      "passed": 994,
+      "failed": 0,
+      "ignored": 8,
+      "groups": 79,
+      "evidence_kind": "historical report / source-specific local validation",
+      "note": "Locked workspace test passed; local CI pending."
+    },
+    {
+      "checkpoint": "M12",
+      "date": "2026-10-22",
+      "passed": 1006,
+      "failed": 0,
+      "ignored": 8,
+      "groups": 81,
+      "evidence_kind": "historical report / source-specific local validation",
+      "note": "Locked workspace test passed; local CI pending."
+    },
+    {
+      "checkpoint": "M13 repair",
+      "date": "2026-10-22",
+      "passed": 1022,
+      "failed": 0,
+      "ignored": 8,
+      "groups": 82,
+      "evidence_kind": "historical report / source-specific local validation",
+      "note": "Prior M13 review run failed: 417 passed, 1 failed, 6 ignored (partial), exit 101. Later corrective source gate passed 1022/0/8."
+    },
+    {
+      "checkpoint": "M14",
+      "date": "2026-10-23",
+      "passed": 1034,
+      "failed": 0,
+      "ignored": 8,
+      "groups": 84,
+      "evidence_kind": "historical report / source-specific local validation",
+      "note": "12 new tests included, plus Python semantic checks; exact-source local gate passed."
+    },
+    {
+      "checkpoint": "M15",
+      "date": "2026-10-23",
+      "passed": 1042,
+      "failed": 0,
+      "ignored": 8,
+      "groups": 85,
+      "evidence_kind": "historical report / source-specific local validation",
+      "note": "Eight new tests included; exact-source local gate passed."
+    },
+    {
+      "checkpoint": "M16",
+      "date": "2026-10-23",
+      "passed": 1051,
+      "failed": 0,
+      "ignored": 8,
+      "groups": 86,
+      "evidence_kind": "historical report / source-specific local validation",
+      "note": "Nine new tests included; 21,086 finite cases and 41,806 Rank calls in model; exact-source local gate passed."
+    },
+    {
+      "checkpoint": "M17",
+      "date": "2026-10-23",
+      "passed": 1057,
+      "failed": 0,
+      "ignored": 8,
+      "groups": 87,
+      "evidence_kind": "historical report / source-specific local validation",
+      "note": "Six new tests included; failures during earlier lint/parser verification preserved in historical record; final local gate passed."
+    },
+    {
+      "checkpoint": "M18",
+      "date": "2026-10-23",
+      "passed": 1057,
+      "failed": 0,
+      "ignored": 8,
+      "groups": 87,
+      "evidence_kind": "historical report / source-specific local validation",
+      "note": "ANALYSIS ONLY: 1,057/0/8 reuses M17, not newly executed Rust suite; 31/512 counterexample against applying the bound without helper work."
+    },
+    {
+      "checkpoint": "M19",
+      "date": "2026-10-23",
+      "passed": 1065,
+      "failed": 0,
+      "ignored": 8,
+      "groups": 88,
+      "evidence_kind": "historical report / source-specific local validation",
+      "note": "Eight new tests included; 63 trace events / 17,903 modeled request payload bytes; exact-source local gate passed; hosted CI pending."
+    }
+  ]
+}

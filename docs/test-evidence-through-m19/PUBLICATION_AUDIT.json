@@ -1,0 +1,31 @@
+{
+  "classification": "SELECTED_PROVENANCE_NOT_COMPLETE_RAW_LOG_ARCHIVE",
+  "scan_result": "no hits for configured patterns",
+  "checked_categories": [
+    "private_identity",
+    "agent_brand",
+    "private_path",
+    "secrets",
+    "email",
+    "future_milestone"
+  ],
+  "historical_original_raw_logs_included": false,
+  "current_public_python_stdout_included": true,
+  "new_rust_compilation_or_tests_performed": false,
+  "private_source_git_identity_excluded": true,
+  "known_failed_checkpoints_disclosed": true,
+  "public_models_ran_under_normal_and_optimized_python": true,
+  "caveat": "Pattern scan cannot prove absence of all confidential information",
+  "earliest_documented_checkpoint": "Phase 5 (13 October 2026)",
+  "expanded_past_J1": true,
+  "earlier_original_full_logs_included": false,
+  "new_historical_checkpoints_indexed": 21,
+  "original_cargo_logs_aggregate_verified": 5,
+  "archive_type": "HISTORICAL_INDEX_AND_EXTRACTS_NOT_ALL_RAW_LOGS",
+  "contains_root_source_manifest": true,
+  "root_manifest_includes_evidence_files": true,
+  "root_manifest_prior_file_hashes_reused": true,
+  "archive_self_sha_included": false,
+  "self_sha_reason": "self-reference; published separately",
+  "complete_original_logs_included": false
+}

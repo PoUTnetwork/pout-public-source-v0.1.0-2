@@ -1,0 +1,366 @@
+[
+  {
+    "milestone": "Round 4",
+    "reported_date": "2026-10-13",
+    "reported_workspace": {
+      "passed": 125,
+      "failed": 0,
+      "ignored": 0,
+      "groups": 23
+    },
+    "research_area": "Operational reliability",
+    "qualification": "Four concurrent customers, 128 MiB encrypted recovery and once-only mock settlement; historical local pass; original test-log excerpt inspected.",
+    "classification": "historical reported test result; not a newly performed public workspace run",
+    "source_type": "maintained historic status and retained original test evidence"
+  },
+  {
+    "milestone": "Round 5",
+    "reported_date": "2026-10-14",
+    "reported_workspace": {
+      "passed": 142,
+      "failed": 0,
+      "ignored": 0,
+      "groups": 24
+    },
+    "research_area": "Operational reliability",
+    "qualification": "512 MiB publication with publisher/provider/coordinator restarts; historical local pass.",
+    "classification": "historical reported test result; not a newly performed public workspace run",
+    "source_type": "maintained historic status and retained original test evidence"
+  },
+  {
+    "milestone": "Round 6",
+    "reported_date": "2026-10-14",
+    "reported_workspace": {
+      "passed": 192,
+      "failed": 0,
+      "ignored": 2,
+      "groups": 25
+    },
+    "research_area": "Operational reliability",
+    "qualification": "Resource quotas and mixed load; test suite passes, but an acceptance cleanup required a second SIGINT. Not an unattended shutdown pass.",
+    "classification": "historical reported test result; not a newly performed public workspace run",
+    "source_type": "maintained historic status and retained original test evidence"
+  },
+  {
+    "milestone": "CWC milestone B",
+    "reported_date": "2026-10-17",
+    "reported_workspace": {
+      "passed": 476,
+      "failed": 0,
+      "ignored": 7,
+      "groups": null
+    },
+    "research_area": "CWC research / hosted Ubuntu",
+    "qualification": "Hosted Ubuntu completed 476/0/7, plus separate shared platform results. Network representative workload gate remained failed.",
+    "classification": "historical reported test result; not a newly performed public workspace run",
+    "source_type": "maintained historic status and retained original test evidence"
+  },
+  {
+    "milestone": "R1",
+    "reported_date": "2026-10-20",
+    "reported_workspace": {
+      "passed": 891,
+      "failed": 0,
+      "ignored": 7,
+      "groups": 66
+    },
+    "research_area": "Local byte retrieval research",
+    "qualification": "Local checked byte retrieval, not external internet bandwidth or independent demand.",
+    "classification": "historical reported test result; not a newly performed public workspace run",
+    "source_type": "maintained historic status and retained original test evidence"
+  },
+  {
+    "milestone": "R2",
+    "reported_date": "2026-10-20",
+    "reported_workspace": {
+      "passed": 901,
+      "failed": 0,
+      "ignored": 7,
+      "groups": 67
+    },
+    "research_area": "Local egress research",
+    "qualification": "Shared quota window experiment; no physical link independence.",
+    "classification": "historical reported test result; not a newly performed public workspace run",
+    "source_type": "maintained historic status and retained original test evidence"
+  },
+  {
+    "milestone": "R3",
+    "reported_date": "2026-10-20",
+    "reported_workspace": {
+      "passed": 909,
+      "failed": 0,
+      "ignored": 7,
+      "groups": 68
+    },
+    "research_area": "Local storage reconstruction research",
+    "qualification": "Shared source can satisfy multiple encodings. Negative counterexample, not proof of replicated physical storage.",
+    "classification": "historical reported test result; not a newly performed public workspace run",
+    "source_type": "maintained historic status and retained original test evidence"
+  },
+  {
+    "milestone": "M1",
+    "reported_date": "2026-10-21",
+    "reported_workspace": {
+      "passed": 946,
+      "failed": 0,
+      "ignored": 8,
+      "groups": 72
+    },
+    "research_area": "Finite probability analysis",
+    "qualification": "Reused 946/0/8 Rust suite from identical-source audit; new mathematical reference separately executed, no new Rust suite.",
+    "classification": "historical reported test result; not a newly performed public workspace run",
+    "source_type": "maintained historic status and retained original test evidence"
+  },
+  {
+    "milestone": "M2",
+    "reported_date": "2026-10-21",
+    "reported_workspace": {
+      "passed": 955,
+      "failed": 0,
+      "ignored": 8,
+      "groups": 74
+    },
+    "research_area": "Finite challenge model",
+    "qualification": "Nine focused tests included in the 955 total; initial Clippy failure was corrected and retained.",
+    "classification": "historical reported test result; not a newly performed public workspace run",
+    "source_type": "maintained historic status and retained original test evidence"
+  },
+  {
+    "milestone": "M3",
+    "reported_date": "2026-10-21",
+    "reported_workspace": {
+      "passed": 955,
+      "failed": 0,
+      "ignored": 8,
+      "groups": 74
+    },
+    "research_area": "Analytical information model",
+    "qualification": "Rust results reused from M2; Python reference executed 93,855 named visits.",
+    "classification": "historical reported test result; not a newly performed public workspace run",
+    "source_type": "maintained historic status and retained original test evidence"
+  },
+  {
+    "milestone": "M4",
+    "reported_date": "2026-10-21",
+    "reported_workspace": {
+      "passed": 961,
+      "failed": 0,
+      "ignored": 8,
+      "groups": 75
+    },
+    "research_area": "Adapter error classification",
+    "qualification": "Two intentionally failing red tests and subsequent fixes; six focused tests and full workspace passed after correction.",
+    "classification": "historical reported test result; not a newly performed public workspace run",
+    "source_type": "maintained historic status and retained original test evidence"
+  },
+  {
+    "milestone": "M5",
+    "reported_date": "2026-10-21",
+    "reported_workspace": {
+      "passed": 961,
+      "failed": 0,
+      "ignored": 8,
+      "groups": 75
+    },
+    "research_area": "Repeated audits analysis",
+    "qualification": "Rust results reused from M4; separate Python analysis, 17,267,811 named events.",
+    "classification": "historical reported test result; not a newly performed public workspace run",
+    "source_type": "maintained historic status and retained original test evidence"
+  },
+  {
+    "milestone": "M6",
+    "reported_date": "2026-10-21",
+    "reported_workspace": {
+      "passed": 968,
+      "failed": 0,
+      "ignored": 8,
+      "groups": 76
+    },
+    "research_area": "Repeated audits Rust regression",
+    "qualification": "Seven new tests; 20,257,732 logical focused model events. Included in 968 total.",
+    "classification": "historical reported test result; not a newly performed public workspace run",
+    "source_type": "maintained historic status and retained original test evidence"
+  },
+  {
+    "milestone": "M7",
+    "reported_date": "2026-10-21",
+    "reported_workspace": {
+      "passed": 968,
+      "failed": 0,
+      "ignored": 8,
+      "groups": 76
+    },
+    "research_area": "Conditional public-view mathematics",
+    "qualification": "Rust results reused from M6; Python reference 38,629 events and 14,635 independent checks.",
+    "classification": "historical reported test result; not a newly performed public workspace run",
+    "source_type": "maintained historic status and retained original test evidence"
+  },
+  {
+    "milestone": "M8",
+    "reported_date": "2026-10-21",
+    "reported_workspace": {
+      "passed": 968,
+      "failed": 0,
+      "ignored": 8,
+      "groups": 76
+    },
+    "research_area": "Indexed first-hit bounds",
+    "qualification": "Rust results reused from M6; 56 finite reference profiles, 283,576 named events, 53,437 callbacks.",
+    "classification": "historical reported test result; not a newly performed public workspace run",
+    "source_type": "maintained historic status and retained original test evidence"
+  },
+  {
+    "milestone": "M9",
+    "reported_date": "2026-10-21",
+    "reported_workspace": {
+      "passed": 980,
+      "failed": 0,
+      "ignored": 8,
+      "groups": 77
+    },
+    "research_area": "Resource proof exploration",
+    "qualification": "Locked workspace test passed; local CI pending.",
+    "classification": "historical reported test result; not a newly performed public workspace run",
+    "source_type": "maintained historic status and retained original test evidence"
+  },
+  {
+    "milestone": "M10",
+    "reported_date": "2026-10-21",
+    "reported_workspace": {
+      "passed": 988,
+      "failed": 0,
+      "ignored": 8,
+      "groups": 78
+    },
+    "research_area": "Terminal probe research",
+    "qualification": "Locked workspace test passed; local CI pending.",
+    "classification": "historical reported test result; not a newly performed public workspace run",
+    "source_type": "maintained historic status and retained original test evidence"
+  },
+  {
+    "milestone": "M11",
+    "reported_date": "2026-10-21",
+    "reported_workspace": {
+      "passed": 994,
+      "failed": 0,
+      "ignored": 8,
+      "groups": 79
+    },
+    "research_area": "Fresh context qualification",
+    "qualification": "Locked workspace test passed; local CI pending.",
+    "classification": "historical reported test result; not a newly performed public workspace run",
+    "source_type": "maintained historic status and retained original test evidence"
+  },
+  {
+    "milestone": "M12",
+    "reported_date": "2026-10-22",
+    "reported_workspace": {
+      "passed": 1006,
+      "failed": 0,
+      "ignored": 8,
+      "groups": 81
+    },
+    "research_area": "Producer-first provenance",
+    "qualification": "Locked workspace test passed; local CI pending.",
+    "classification": "historical reported test result; not a newly performed public workspace run",
+    "source_type": "maintained historic status and retained original test evidence"
+  },
+  {
+    "milestone": "M13 repair",
+    "reported_date": "2026-10-22",
+    "reported_workspace": {
+      "passed": 1022,
+      "failed": 0,
+      "ignored": 8,
+      "groups": 82
+    },
+    "research_area": "Whole proposal + operational correction",
+    "qualification": "Prior M13 review run failed: 417 passed, 1 failed, 6 ignored (partial), exit 101. Later corrective source gate passed 1022/0/8.",
+    "classification": "historical reported test result; not a newly performed public workspace run",
+    "source_type": "maintained historic status and retained original test evidence"
+  },
+  {
+    "milestone": "M14",
+    "reported_date": "2026-10-23",
+    "reported_workspace": {
+      "passed": 1034,
+      "failed": 0,
+      "ignored": 8,
+      "groups": 84
+    },
+    "research_area": "Finite distinct opportunities",
+    "qualification": "12 new tests included, plus Python semantic checks; exact-source local gate passed.",
+    "classification": "historical reported test result; not a newly performed public workspace run",
+    "source_type": "maintained historic status and retained original test evidence"
+  },
+  {
+    "milestone": "M15",
+    "reported_date": "2026-10-23",
+    "reported_workspace": {
+      "passed": 1042,
+      "failed": 0,
+      "ignored": 8,
+      "groups": 85
+    },
+    "research_area": "Exact-intent binding",
+    "qualification": "Eight new tests included; exact-source local gate passed.",
+    "classification": "historical reported test result; not a newly performed public workspace run",
+    "source_type": "maintained historic status and retained original test evidence"
+  },
+  {
+    "milestone": "M16",
+    "reported_date": "2026-10-23",
+    "reported_workspace": {
+      "passed": 1051,
+      "failed": 0,
+      "ignored": 8,
+      "groups": 86
+    },
+    "research_area": "Rank/work composition",
+    "qualification": "Nine new tests included; 21,086 finite cases and 41,806 Rank calls in model; exact-source local gate passed.",
+    "classification": "historical reported test result; not a newly performed public workspace run",
+    "source_type": "maintained historic status and retained original test evidence"
+  },
+  {
+    "milestone": "M17",
+    "reported_date": "2026-10-23",
+    "reported_workspace": {
+      "passed": 1057,
+      "failed": 0,
+      "ignored": 8,
+      "groups": 87
+    },
+    "research_area": "Verifier-pinned Rank threshold",
+    "qualification": "Six new tests included; failures during earlier lint/parser verification preserved in historical record; final local gate passed.",
+    "classification": "historical reported test result; not a newly performed public workspace run",
+    "source_type": "maintained historic status and retained original test evidence"
+  },
+  {
+    "milestone": "M18",
+    "reported_date": "2026-10-23",
+    "reported_workspace": {
+      "passed": 1057,
+      "failed": 0,
+      "ignored": 8,
+      "groups": 87
+    },
+    "research_area": "Target selection counterexample",
+    "qualification": "ANALYSIS ONLY: 1,057/0/8 reuses M17, not newly executed Rust suite; 31/512 counterexample against applying the bound without helper work.",
+    "classification": "historical reported test result; not a newly performed public workspace run",
+    "source_type": "maintained historic status and retained original test evidence"
+  },
+  {
+    "milestone": "M19",
+    "reported_date": "2026-10-23",
+    "reported_workspace": {
+      "passed": 1065,
+      "failed": 0,
+      "ignored": 8,
+      "groups": 88
+    },
+    "research_area": "Causal byte/history adapter",
+    "qualification": "Eight new tests included; 63 trace events / 17,903 modeled request payload bytes; exact-source local gate passed; hosted CI pending.",
+    "classification": "historical reported test result; not a newly performed public workspace run",
+    "source_type": "maintained historic status and retained original test evidence"
+  }
+]

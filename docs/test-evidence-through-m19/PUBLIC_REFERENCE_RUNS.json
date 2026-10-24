@@ -1,0 +1,22 @@
+[
+  {
+    "source": "public repository M19 overlay",
+    "command": "python3 -I -B research/milestones/reproduce.py",
+    "exit_code": 0,
+    "stdout_sha256": "574ed239fa9b54991c66fe68129d6ac4ba884f96cd3c63dca050b56938f6480b",
+    "stdout_bytes": 2561,
+    "stderr_bytes": 0,
+    "reexecuted_for_this_evidence_archive": true,
+    "limitations": "Python finite references and byte vectors only; no Rust or physical traffic test"
+  },
+  {
+    "source": "public repository M19 overlay",
+    "command": "python3 -I -B -O research/milestones/reproduce.py",
+    "exit_code": 0,
+    "stdout_sha256": "574ed239fa9b54991c66fe68129d6ac4ba884f96cd3c63dca050b56938f6480b",
+    "stdout_bytes": 2561,
+    "stderr_bytes": 0,
+    "reexecuted_for_this_evidence_archive": true,
+    "limitations": "Python finite references and byte vectors only; no Rust or physical traffic test"
+  }
+]

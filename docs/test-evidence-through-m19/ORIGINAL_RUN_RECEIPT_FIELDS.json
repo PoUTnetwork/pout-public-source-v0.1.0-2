@@ -1,0 +1,142 @@
+{
+  "schema": 1,
+  "historical_exact_source_local_receipts": [
+    {
+      "milestone": "M14",
+      "source_build_sha256": "22f81ae1592fa151a1c5fb8a2a36f144bcd49a560ae12e7a25f6f77d9bb26cd7",
+      "completed_at_utc": "2026-10-23T00:46:44.095603+00:00",
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--workspace"
+      ],
+      "exit_code": 0,
+      "passed": 1034,
+      "failed": 0,
+      "ignored": 8,
+      "cargo_groups": 84,
+      "full_test_log": {
+        "sha256": "8c6acef839dd32998b82c37a071f77bcb70398078017fd72bd29c6a5295cac90",
+        "original_bytes": 111449,
+        "included_in_this_export": false
+      },
+      "warning_free_clippy_log_sha256": "da6318de02f1b5c4ca77c585c580cafd2f0792d74f2f5775ac6dd9bc14c1ea84",
+      "focused_test_log_sha256": "d1ccadc43c71f7ab18041533f0553a6e9a6fa59ec9d88d9eac3d18e8068b6d12",
+      "provenance": "field-level extraction from retained machine-generated local supervisor receipt; original log not redistributed",
+      "hosted_ci": "pending_at_source_freeze"
+    },
+    {
+      "milestone": "M15",
+      "source_build_sha256": "7c1e67c1e3a57c8c26093f329077898317402e8e964fcbb2065adce76a6c174a",
+      "completed_at_utc": "2026-10-23T02:24:20.407821+00:00",
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--workspace"
+      ],
+      "exit_code": 0,
+      "passed": 1042,
+      "failed": 0,
+      "ignored": 8,
+      "cargo_groups": 85,
+      "full_test_log": {
+        "sha256": "766aabb8e8dc65cad676b880b5f6f88d4a461c8c3de62e1c68fb7dfd0ce39c67",
+        "original_bytes": 112472,
+        "included_in_this_export": false
+      },
+      "warning_free_clippy_log_sha256": "0dcedc569656bdf2eec39414e6a8dc886bd8498262eabbcdfccfcc47f67a6f95",
+      "focused_test_log_sha256": "d070919e617ccaef01184219e8969c0b1a1837e8770b56da3416b5f0913abae3",
+      "provenance": "field-level extraction from retained machine-generated local supervisor receipt; original log not redistributed",
+      "hosted_ci": "pending_at_source_freeze"
+    },
+    {
+      "milestone": "M16",
+      "source_build_sha256": "c7d4a042e5d3ce24cf28f94c0cd89aa5b5d0377e8c743cc872682f85d8d345e8",
+      "completed_at_utc": "2026-10-23T03:40:56.589245+00:00",
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--workspace"
+      ],
+      "exit_code": 0,
+      "passed": 1051,
+      "failed": 0,
+      "ignored": 8,
+      "cargo_groups": 86,
+      "full_test_log": {
+        "sha256": "31a11c1f6ec6d9ba653766e6c594add276da053d94ae65e5f9d901f9aa4959ef",
+        "original_bytes": 113449,
+        "included_in_this_export": false
+      },
+      "warning_free_clippy_log_sha256": "1661fb35b21617e8af4ed72c3cdf9299b0e97c780c723601a3683f7c86e8db7f",
+      "focused_test_log_sha256": "665694e2f28685896dca5720bc1522cd0eb48b6d8087b1aae9c868229a1e5bab",
+      "provenance": "field-level extraction from retained machine-generated local supervisor receipt; original log not redistributed",
+      "hosted_ci": "pending_at_source_freeze"
+    },
+    {
+      "milestone": "M17",
+      "source_build_sha256": "802e56ba920281c7cf27f9b22be58fb3495998c45a31115b3b2fc811c4894632",
+      "completed_at_utc": "2026-10-23T15:24:40.497657+00:00",
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--workspace"
+      ],
+      "exit_code": 0,
+      "passed": 1057,
+      "failed": 0,
+      "ignored": 8,
+      "cargo_groups": 87,
+      "full_test_log": {
+        "sha256": "93b81a943be8cb6aa361312c82e77011144a0629e99d8303a9230bbd6330dc5e",
+        "original_bytes": 121031,
+        "included_in_this_export": false
+      },
+      "warning_free_clippy_log_sha256": "f8b7ef6897f891caaf57d27450456570d7a64a48f5937d2fa71d3972478a161d",
+      "focused_test_log_sha256": null,
+      "provenance": "field-level extraction from retained machine-generated local supervisor receipt; original log not redistributed",
+      "hosted_ci": "pending_at_source_freeze"
+    },
+    {
+      "milestone": "M19",
+      "source_build_sha256": "fec8be21db32980f66d1bf9de185bc530bdc2980c3317a161213118b0f973876",
+      "completed_at_utc": "2026-10-23T19:52:07.302771+00:00",
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--workspace"
+      ],
+      "exit_code": 0,
+      "passed": 1065,
+      "failed": 0,
+      "ignored": 8,
+      "cargo_groups": 88,
+      "full_test_log": {
+        "sha256": "7908922a8cf866b721bd0f42c24ba34236cbf3ef4c3d84ba982508c62b2d51d4",
+        "original_bytes": 116601,
+        "included_in_this_export": false
+      },
+      "warning_free_clippy_log_sha256": "1db86e21b4fa74227dbbcacae73f19596722c20acc29708bfdfe46c47aa70317",
+      "focused_test_log_sha256": "a709d5e1399984ca562ecf72c23f28ef1b69a685ad774324a590d7e269fba08e",
+      "provenance": "field-level extraction from retained machine-generated local supervisor receipt; original log not redistributed",
+      "hosted_ci": "pending_at_source_freeze"
+    }
+  ],
+  "source_documented_failures": [
+    {
+      "checkpoint": "M13 diagnostic run",
+      "result": "417 passed, 1 failed, 6 ignored (partial); exit code 101; later corrected run passed 1,022/0/8",
+      "outcome": "FAILURE_PRESERVED"
+    },
+    {
+      "checkpoint": "Round 6 acceptance teardown",
+      "result": "required a recorded second SIGINT; not unattended shutdown",
+      "outcome": "QUALIFIED_PASS"
+    }
+  ]
+}

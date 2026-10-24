@@ -1,0 +1,71 @@
+{
+  "classification": "actual original Cargo log result-group extraction; private original log bytes NOT included",
+  "extractor": "sum all individual test result lines of original source-file, not duplicate every Cargo group",
+  "records": [
+    {
+      "stage": "Phase 5",
+      "origin_git_blob_sha1": "6ea9b171df6411e7584812c9972fae9cb06bbab0",
+      "original_characters": 11235,
+      "original_group_result_lines": 22,
+      "extracted_total": {
+        "passed": 100,
+        "failed": 0,
+        "ignored": 0
+      },
+      "extractor": "all lines matching cargo test result summaries",
+      "full_original_included": false
+    },
+    {
+      "stage": "Round 4",
+      "origin_git_blob_sha1": "d7ff3852af3b8d8f429ad1c730e5fc568bd782d8",
+      "original_characters": 13508,
+      "original_group_result_lines": 23,
+      "extracted_total": {
+        "passed": 125,
+        "failed": 0,
+        "ignored": 0
+      },
+      "extractor": "original status cross-check and selected original line",
+      "full_original_included": false
+    },
+    {
+      "stage": "First CWC prototype",
+      "origin_git_blob_sha1": "0f2e63933d82ea178e06cf40b80e925e8b5a23c3",
+      "original_characters": 48257,
+      "original_group_result_lines": 44,
+      "extracted_total": {
+        "passed": 444,
+        "failed": 0,
+        "ignored": 6
+      },
+      "extractor": "all lines matching cargo test result summaries",
+      "full_original_included": false
+    },
+    {
+      "stage": "J1",
+      "origin_git_blob_sha1": "c5aa8012e6516b1151ca819007c4ddcbf23dffa0",
+      "original_characters": 104421,
+      "original_group_result_lines": 63,
+      "extracted_total": {
+        "passed": 870,
+        "failed": 0,
+        "ignored": 7
+      },
+      "extractor": "all lines matching cargo test result summaries",
+      "full_original_included": false
+    },
+    {
+      "stage": "R1",
+      "origin_git_blob_sha1": "a12e893958673b9a59da2c6bd955504ad5aad977",
+      "original_characters": 106787,
+      "original_group_result_lines": 66,
+      "extracted_total": {
+        "passed": 891,
+        "failed": 0,
+        "ignored": 7
+      },
+      "extractor": "all lines matching cargo test result summaries",
+      "full_original_included": false
+    }
+  ]
+}
