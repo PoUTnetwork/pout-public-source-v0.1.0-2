@@ -1,0 +1,228 @@
+{
+  "command": [
+    "python3",
+    "-I",
+    "-B",
+    "-O",
+    "research/post-m19/reproduce.py"
+  ],
+  "counting": "Normal and optimized modes repeat the same nine checks and are not additive.",
+  "ended_at_utc": "2026-10-30T19:17:12.790625+00:00",
+  "execution": "actually executed during this reconstruction",
+  "exit_code": 0,
+  "input_sha256": {
+    "research/post-m19/reproduce.py": "a59ada0b1d910c379a87dcb8e067b09cea04311b9834f334b5de5bcd22b4a5fa",
+    "tests/fixtures/post-m19/reference_parameters.json": "9a3daaac93a7a1a10a4f9809325db8f6d7cb340ffbb7b1eee18a960d3bb8a903"
+  },
+  "machine_architecture": "x86_64",
+  "omitted_output_bytes": 0,
+  "operating_system": "Linux",
+  "output_truncated": false,
+  "python_version": "3.13.5",
+  "result": {
+    "checks_failed": 0,
+    "checks_passed": 9,
+    "claim": "Selected exact arithmetic and finite models only; no native cryptographic or consensus certification.",
+    "fixture_sha256": "9a3daaac93a7a1a10a4f9809325db8f6d7cb340ffbb7b1eee18a960d3bb8a903",
+    "results": [
+      {
+        "details": {
+          "scope": "elementary diagnostic; not the original 14-bit corpus",
+          "selected_zero": "3/4",
+          "target_counts": [
+            2,
+            2
+          ],
+          "worlds": 4,
+          "wrong_ordinal_disagreements": 2
+        },
+        "id": "R01",
+        "status": "PASS"
+      },
+      {
+        "details": {
+          "public_assembly": "9/16",
+          "replay_floor": "1/4",
+          "residual_upper_expression": "9/16 + 2^-216",
+          "scope": "stated arithmetic only",
+          "strictly_below_one": true
+        },
+        "id": "R02",
+        "status": "PASS"
+      },
+      {
+        "details": {
+          "acceptance_comparisons": "exact rational; decimals are display only",
+          "audits": 10240,
+          "complete_coverage_union_lower_decimal": "0.9074741308970460110531058348752641",
+          "positions_per_context": 1024,
+          "replay_probability_decimal": "0.9999096447470642933173773576628513",
+          "scope": "independent uniform uncensored draws; paid public history"
+        },
+        "id": "R03",
+        "status": "PASS"
+      },
+      {
+        "details": {
+          "balanced_cache": [
+            288,
+            288
+          ],
+          "covered_positions": [
+            866,
+            866
+          ],
+          "largest_exhaustive_chain": 9,
+          "one_context_coverage": "433/512",
+          "scope": "canonical chain closure, not a general concrete-hash theorem",
+          "small_chain_comparisons": 4088,
+          "two_chain_allocation_cases": 577
+        },
+        "id": "R04",
+        "status": "PASS"
+      },
+      {
+        "details": {
+          "minimum_intersection": 2,
+          "persistent_lock_assignments": 108,
+          "quorums": 4,
+          "scope": "finite signer-set model; no signature or network execution",
+          "two_faulty_conflict_witness": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              3
+            ]
+          ]
+        },
+        "id": "R05",
+        "status": "PASS"
+      },
+      {
+        "details": {
+          "profiles": [
+            {
+              "B": 204,
+              "J": 33622016,
+              "a": 128,
+              "draws_per_context": 64,
+              "ell": 26,
+              "exponent": -15232,
+              "h": 64,
+              "independent_target_bits": 1280,
+              "n": 2048,
+              "root_codec_exponent": "-119/4",
+              "s": 576,
+              "t": 512,
+              "u": 0
+            },
+            {
+              "B": 208,
+              "J": 8488960,
+              "a": 768,
+              "draws_per_context": 384,
+              "ell": 24,
+              "exponent": -17536,
+              "h": 64,
+              "independent_target_bits": 7680,
+              "n": 2048,
+              "root_codec_exponent": "-137",
+              "s": 576,
+              "t": 128,
+              "u": 0
+            }
+          ],
+          "scope": "codec arithmetic, not the codec injection proof"
+        },
+        "id": "R06",
+        "status": "PASS"
+      },
+      {
+        "details": {
+          "coarse_bound": "(893/1000)*2^-26",
+          "integer_certificates": [
+            {
+              "left": 5629,
+              "right": 5632
+            },
+            {
+              "left": 2576816,
+              "right": 2599051
+            },
+            {
+              "left": 10648,
+              "right": 10985
+            },
+            {
+              "left": 4117715,
+              "right": 4194304
+            },
+            {
+              "left": 12005,
+              "right": 12288
+            }
+          ],
+          "raw_success_strict_upper": "2^-26",
+          "root_codec_exponent": "-119/4",
+          "scope": "conditional arithmetic certificate"
+        },
+        "id": "R07",
+        "status": "PASS"
+      },
+      {
+        "details": {
+          "first_term_strict_upper": "2^-164",
+          "raw_success_strict_upper": "2^-136",
+          "root_codec_exponent": "-137",
+          "scope": "one simultaneous batch, not lifetime amplification"
+        },
+        "id": "R08",
+        "status": "PASS"
+      },
+      {
+        "details": {
+          "authentication_query_cap": 4294967296,
+          "collision_error_strict_upper": "2^-193",
+          "formats": [
+            {
+              "challenge_bytes": 704,
+              "draws_per_context": 64,
+              "response_bytes": 136896,
+              "state_bytes": 12776
+            },
+            {
+              "challenge_bytes": 3264,
+              "draws_per_context": 384,
+              "response_bytes": 820416,
+              "state_bytes": 12776
+            }
+          ],
+          "graph_descriptor_bytes": 9220,
+          "record_bytes": 356,
+          "registration_hash_calls": 8189,
+          "scope": "literal specification sizes; no executed verifier or universal compression lower bound"
+        },
+        "id": "R09",
+        "status": "PASS"
+      }
+    ],
+    "schema": "pout-public-reference-results-v1"
+  },
+  "run_id": "reference_optimized",
+  "schema": "pout-public-execution-record-v1",
+  "scope": "Included public reference checks only; not historical native, cryptographic, hosted or network validation.",
+  "started_at_utc": "2026-10-30T19:17:10.086765+00:00",
+  "stderr": "",
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout": "{\n  \"checks_failed\": 0,\n  \"checks_passed\": 9,\n  \"claim\": \"Selected exact arithmetic and finite models only; no native cryptographic or consensus certification.\",\n  \"fixture_sha256\": \"9a3daaac93a7a1a10a4f9809325db8f6d7cb340ffbb7b1eee18a960d3bb8a903\",\n  \"results\": [\n    {\n      \"details\": {\n        \"scope\": \"elementary diagnostic; not the original 14-bit corpus\",\n        \"selected_zero\": \"3/4\",\n        \"target_counts\": [\n          2,\n          2\n        ],\n        \"worlds\": 4,\n        \"wrong_ordinal_disagreements\": 2\n      },\n      \"id\": \"R01\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"details\": {\n        \"public_assembly\": \"9/16\",\n        \"replay_floor\": \"1/4\",\n        \"residual_upper_expression\": \"9/16 + 2^-216\",\n        \"scope\": \"stated arithmetic only\",\n        \"strictly_below_one\": true\n      },\n      \"id\": \"R02\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"details\": {\n        \"acceptance_comparisons\": \"exact rational; decimals are display only\",\n        \"audits\": 10240,\n        \"complete_coverage_union_lower_decimal\": \"0.9074741308970460110531058348752641\",\n        \"positions_per_context\": 1024,\n        \"replay_probability_decimal\": \"0.9999096447470642933173773576628513\",\n        \"scope\": \"independent uniform uncensored draws; paid public history\"\n      },\n      \"id\": \"R03\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"details\": {\n        \"balanced_cache\": [\n          288,\n          288\n        ],\n        \"covered_positions\": [\n          866,\n          866\n        ],\n        \"largest_exhaustive_chain\": 9,\n        \"one_context_coverage\": \"433/512\",\n        \"scope\": \"canonical chain closure, not a general concrete-hash theorem\",\n        \"small_chain_comparisons\": 4088,\n        \"two_chain_allocation_cases\": 577\n      },\n      \"id\": \"R04\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"details\": {\n        \"minimum_intersection\": 2,\n        \"persistent_lock_assignments\": 108,\n        \"quorums\": 4,\n        \"scope\": \"finite signer-set model; no signature or network execution\",\n        \"two_faulty_conflict_witness\": [\n          [\n            0,\n            1,\n            2\n          ],\n          [\n            0,\n            1,\n            3\n          ]\n        ]\n      },\n      \"id\": \"R05\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"details\": {\n        \"profiles\": [\n          {\n            \"B\": 204,\n            \"J\": 33622016,\n            \"a\": 128,\n            \"draws_per_context\": 64,\n            \"ell\": 26,\n            \"exponent\": -15232,\n            \"h\": 64,\n            \"independent_target_bits\": 1280,\n            \"n\": 2048,\n            \"root_codec_exponent\": \"-119/4\",\n            \"s\": 576,\n            \"t\": 512,\n            \"u\": 0\n          },\n          {\n            \"B\": 208,\n            \"J\": 8488960,\n            \"a\": 768,\n            \"draws_per_context\": 384,\n            \"ell\": 24,\n            \"exponent\": -17536,\n            \"h\": 64,\n            \"independent_target_bits\": 7680,\n            \"n\": 2048,\n            \"root_codec_exponent\": \"-137\",\n            \"s\": 576,\n            \"t\": 128,\n            \"u\": 0\n          }\n        ],\n        \"scope\": \"codec arithmetic, not the codec injection proof\"\n      },\n      \"id\": \"R06\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"details\": {\n        \"coarse_bound\": \"(893/1000)*2^-26\",\n        \"integer_certificates\": [\n          {\n            \"left\": 5629,\n            \"right\": 5632\n          },\n          {\n            \"left\": 2576816,\n            \"right\": 2599051\n          },\n          {\n            \"left\": 10648,\n            \"right\": 10985\n          },\n          {\n            \"left\": 4117715,\n            \"right\": 4194304\n          },\n          {\n            \"left\": 12005,\n            \"right\": 12288\n          }\n        ],\n        \"raw_success_strict_upper\": \"2^-26\",\n        \"root_codec_exponent\": \"-119/4\",\n        \"scope\": \"conditional arithmetic certificate\"\n      },\n      \"id\": \"R07\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"details\": {\n        \"first_term_strict_upper\": \"2^-164\",\n        \"raw_success_strict_upper\": \"2^-136\",\n        \"root_codec_exponent\": \"-137\",\n        \"scope\": \"one simultaneous batch, not lifetime amplification\"\n      },\n      \"id\": \"R08\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"details\": {\n        \"authentication_query_cap\": 4294967296,\n        \"collision_error_strict_upper\": \"2^-193\",\n        \"formats\": [\n          {\n            \"challenge_bytes\": 704,\n            \"draws_per_context\": 64,\n            \"response_bytes\": 136896,\n            \"state_bytes\": 12776\n          },\n          {\n            \"challenge_bytes\": 3264,\n            \"draws_per_context\": 384,\n            \"response_bytes\": 820416,\n            \"state_bytes\": 12776\n          }\n        ],\n        \"graph_descriptor_bytes\": 9220,\n        \"record_bytes\": 356,\n        \"registration_hash_calls\": 8189,\n        \"scope\": \"literal specification sizes; no executed verifier or universal compression lower bound\"\n      },\n      \"id\": \"R09\",\n      \"status\": \"PASS\"\n    }\n  ],\n  \"schema\": \"pout-public-reference-results-v1\"\n}\n",
+  "stdout_bytes": 5015,
+  "stdout_sha256": "aaa9d306b47b6aeea080dd34b7a170b60f84f43fd58da908cd9920242dc892c1",
+  "wall_seconds": 2.7038383859999158,
+  "working_directory": "update root"
+}

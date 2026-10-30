@@ -1,0 +1,81 @@
+{
+  "command": [
+    "python3",
+    "-I",
+    "-B",
+    "scripts/check_post_m19_update.py",
+    "--self-test"
+  ],
+  "counting": "Eight separate file-integrity controls; not added to the research check count.",
+  "ended_at_utc": "2026-10-30T19:17:13.537873+00:00",
+  "execution": "actually executed during this reconstruction",
+  "exit_code": 0,
+  "input_sha256": {
+    "scripts/check_post_m19_update.py": "f5aff13dcaf6242ea17e591934b006d21136b48294f4390753c8f51ea66d17f0"
+  },
+  "machine_architecture": "x86_64",
+  "omitted_output_bytes": 0,
+  "operating_system": "Linux",
+  "output_truncated": false,
+  "python_version": "3.13.5",
+  "result": {
+    "results": [
+      {
+        "id": "I01_valid_file",
+        "observed": "accepted",
+        "status": "PASS"
+      },
+      {
+        "id": "I02_changed_file",
+        "observed": "rejected",
+        "status": "PASS"
+      },
+      {
+        "id": "I03_missing_file",
+        "observed": "rejected",
+        "status": "PASS"
+      },
+      {
+        "id": "I04_duplicate_path",
+        "observed": "rejected",
+        "status": "PASS"
+      },
+      {
+        "id": "I05_parent_traversal",
+        "observed": "rejected",
+        "status": "PASS"
+      },
+      {
+        "id": "I06_self_reference",
+        "observed": "rejected",
+        "status": "PASS"
+      },
+      {
+        "id": "I07_noncanonical_path",
+        "observed": "rejected",
+        "status": "PASS"
+      },
+      {
+        "id": "I08_symlink",
+        "observed": "rejected",
+        "status": "PASS"
+      }
+    ],
+    "schema": "pout-update-checker-selftests-v1",
+    "scope": "manifest checker controls only",
+    "tests_failed": 0,
+    "tests_passed": 8
+  },
+  "run_id": "integrity_controls",
+  "schema": "pout-public-execution-record-v1",
+  "scope": "Included manifest checker self-tests only; not a research security result.",
+  "started_at_utc": "2026-10-30T19:17:12.791532+00:00",
+  "stderr": "",
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout": "{\n  \"results\": [\n    {\n      \"id\": \"I01_valid_file\",\n      \"observed\": \"accepted\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"id\": \"I02_changed_file\",\n      \"observed\": \"rejected\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"id\": \"I03_missing_file\",\n      \"observed\": \"rejected\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"id\": \"I04_duplicate_path\",\n      \"observed\": \"rejected\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"id\": \"I05_parent_traversal\",\n      \"observed\": \"rejected\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"id\": \"I06_self_reference\",\n      \"observed\": \"rejected\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"id\": \"I07_noncanonical_path\",\n      \"observed\": \"rejected\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"id\": \"I08_symlink\",\n      \"observed\": \"rejected\",\n      \"status\": \"PASS\"\n    }\n  ],\n  \"schema\": \"pout-update-checker-selftests-v1\",\n  \"scope\": \"manifest checker controls only\",\n  \"tests_failed\": 0,\n  \"tests_passed\": 8\n}\n",
+  "stdout_bytes": 947,
+  "stdout_sha256": "606b2d72721282e2e51dcf42257e7650a5001d9ef5f89136d68becb5d3965625",
+  "wall_seconds": 0.7463245470000857,
+  "working_directory": "update root"
+}

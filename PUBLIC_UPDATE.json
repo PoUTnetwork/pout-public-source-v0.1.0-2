@@ -1,210 +1,99 @@
 {
-  "base_public_commit": "d38086e8b3f10f0f14d71a64994afe15f9f20ae2",
-  "counts": {
-    "m14_public_profiles": 16,
-    "m17_retained_rank_vectors": 1,
-    "m18_complete_tiny_worlds": 64,
-    "m18_quotient_worlds": 512,
-    "m19_exported_test_functions": 8,
-    "m19_original_trace_events": 63
+  "base_commit": "b5cb49b7fbaf76d4f523dcfe014d57829b438dd4",
+  "base_repository": "PoUTnetwork/pout-public-source-v0.1.0-2",
+  "baseline_manifest": {
+    "byte_identity_checked": true,
+    "bytes": 21219,
+    "entries": 189,
+    "git_blob_sha1": "5d9a4f7c31faf3bfdddbfaf769e139d707a7e5b0",
+    "sha256": "8582fc7ea5215f130ea00f80b34ec6e734bf921a6c3980006d99c2df970bc4e0"
   },
-  "files": [
-    {
-      "base_sha256": "0a1b1d46fce62ef32e335eb051036a3137ca374f6a67d4eba68ede7d58f53a69",
-      "bytes": 2262,
-      "change": "replace",
-      "path": "CHANGELOG.md",
-      "sha256": "4a3eb6feb59b285929f4e1f4c8913b0cefe6cd8f947c959f783f8fe69beab098"
-    },
-    {
-      "base_sha256": "6eeb7c23904f22216af8d1c1144321908da60fcef6a89b1864f62de016e8898d",
-      "bytes": 5193,
-      "change": "replace",
-      "path": "README.md",
-      "sha256": "f604f3f0d2c1cca609e12620eaa6acd75a4959357a700c974bb8fd370aaba309"
-    },
-    {
-      "base_sha256": null,
-      "bytes": 594,
-      "change": "add",
-      "path": "crates/pout-cwc-research/tests/rank_public_vector.rs",
-      "sha256": "fed936a2e886f4011ef34d47151d65a92cbeeab2a1e9d352f2fdde9e94912422"
-    },
-    {
-      "base_sha256": null,
-      "bytes": 612,
-      "change": "add",
-      "path": "crates/pout-public-verifier/examples/causal_byte_bridge.rs",
-      "sha256": "6a995d9f75079838d04a70726748a39b1b12cb20c0b04e95a3a9e07d59a23e64"
-    },
-    {
-      "base_sha256": null,
-      "bytes": 37918,
-      "change": "add",
-      "path": "crates/pout-public-verifier/examples/support/causal_byte_bridge.rs",
-      "sha256": "d013ae1510063a0407a38b4399ad5a83710ee0c8bbe9d08dc72b057ed7a5dce7"
-    },
-    {
-      "base_sha256": null,
-      "bytes": 993,
-      "change": "add",
-      "path": "crates/pout-public-verifier/examples/support/fixture_once.rs",
-      "sha256": "9ddf3ebbad3d011e686191a325ddc1ee4520cc213a2a2cdcaa2a1b6cbc53aeb8"
-    },
-    {
-      "base_sha256": null,
-      "bytes": 9951,
-      "change": "add",
-      "path": "crates/pout-public-verifier/tests/causal_byte_bridge.rs",
-      "sha256": "85cb9e18b64dcfb5f4e722eeecc0abcb0f06d6706ffa2a930a9736305290c44c"
-    },
-    {
-      "base_sha256": "3c72b99f3d4a3e72f0d28877023fa257dbdebc48e1609aaf4debd11f880a9cbe",
-      "bytes": 2325,
-      "change": "replace",
-      "path": "docs/ARCHITECTURE.md",
-      "sha256": "56c1de9772684e5f35477a514e325f2ec35060ecc874b181557b74dbeea3d695"
-    },
-    {
-      "base_sha256": null,
-      "bytes": 8692,
-      "change": "add",
-      "path": "docs/MILESTONES_M14_M19.md",
-      "sha256": "7e6b1e8eafef4e34185f63c76dbee570493b7bee634430425958a76124c5f7d7"
-    },
-    {
-      "base_sha256": "09538a7b69e8bb45785fd1631d2226fbdffe5468ca4ed4c9e57a97a804480f3a",
-      "bytes": 1802,
-      "change": "replace",
-      "path": "docs/PUBLIC_RELEASE_SCOPE.md",
-      "sha256": "e8b936da55b96b0dab04ed32f662eca8bd1f9dbe825affa2e0d0cd55256ac9e2"
-    },
-    {
-      "base_sha256": "6d595a86ce10a19eb3a76436ef04519dec7b42e94e7194bd4959426f4d13aa8f",
-      "bytes": 3201,
-      "change": "replace",
-      "path": "docs/RESEARCH_STATUS.md",
-      "sha256": "028d962cc22f5964a1f4364f7d90c66d9a96dd5c33df49307e2a0ec4b1b8cd07"
-    },
-    {
-      "base_sha256": "10ebe5798d354d7202ef554a865c7eaad531ede044fdf1fc7eb755ab7cbe615f",
-      "bytes": 5728,
-      "change": "replace",
-      "path": "docs/SECURITY.md",
-      "sha256": "5b48920d1295112d1b4738df04c72a0833c5294c8d9e7a87e1549be0b9939658"
-    },
-    {
-      "base_sha256": null,
-      "bytes": 3363,
-      "change": "add",
-      "path": "docs/VALIDATION_M19_PUBLIC.md",
-      "sha256": "8e999af58f5b2f45624cceb48c782b27b1e7b32a0108251222fdda9d0ae9c590"
-    },
-    {
-      "base_sha256": "461e3bd77af0a9a9876b3b70697772774c1fc064d44fad17701933b9b4f4d1b6",
-      "bytes": 1037,
-      "change": "replace",
-      "path": "examples/README.md",
-      "sha256": "611187f8aa59b8fac85bf737cbeefd6770aed20103865f3ca36d6e6673357ccc"
-    },
-    {
-      "base_sha256": null,
-      "bytes": 1065,
-      "change": "add",
-      "path": "research/milestones/README.md",
-      "sha256": "5460f1a069e845ab1adc35d527e420c94f0c663e6e84acc81a96e47b691fc056"
-    },
-    {
-      "base_sha256": null,
-      "bytes": 2561,
-      "change": "add",
-      "path": "research/milestones/public_reference_results.json",
-      "sha256": "574ed239fa9b54991c66fe68129d6ac4ba884f96cd3c63dca050b56938f6480b"
-    },
-    {
-      "base_sha256": null,
-      "bytes": 1686,
-      "change": "add",
-      "path": "research/milestones/recorded_results.json",
-      "sha256": "a27800bac4703cbe79a73863f7ba6926311bafd41564d74ad33247e592f543fa"
-    },
-    {
-      "base_sha256": null,
-      "bytes": 9590,
-      "change": "add",
-      "path": "research/milestones/reproduce.py",
-      "sha256": "2c93b15e026cae8e654fd115b4ee08b85b870967672a966ea8e25e5b37ed7403"
-    },
-    {
-      "base_sha256": "057a7c4dc3c2332eeca1d92cebd1fcc511c49df19f52bd59a669b90168c6e8aa",
-      "bytes": 1282,
-      "change": "replace",
-      "path": "tests/README.md",
-      "sha256": "862195b9602ba317d6a013985031fffef51b5a80912b31487fec0744be1d1805"
-    },
-    {
-      "base_sha256": null,
-      "bytes": 832,
-      "change": "add",
-      "path": "tests/fixtures/milestones/README.md",
-      "sha256": "e8ae526bf08239edc2e798e38e5b0ba8b820f1413b0afa62312ac6559d44b862"
-    },
-    {
-      "base_sha256": null,
-      "bytes": 821,
-      "change": "add",
-      "path": "tests/fixtures/milestones/m17-half-rank.frame",
-      "sha256": "1ec8d0b9247d47cef2478498fc73111c55974f99f28b3b1f748d764e4b4b0041"
-    },
-    {
-      "base_sha256": null,
-      "bytes": 3559,
-      "change": "add",
-      "path": "tests/fixtures/milestones/m17-half-rank.json",
-      "sha256": "6990391af438f5b937a5a87e81d4342b4e60dbd6ab6d704b78d6fe51f4be5842"
-    },
-    {
-      "base_sha256": null,
-      "bytes": 241,
-      "change": "add",
-      "path": "tests/fixtures/milestones/m19-node-index2.frame",
-      "sha256": "196aa5cf156f996b576872021ee39432b62c6dc745a2665b3674eee79937843e"
-    },
-    {
-      "base_sha256": null,
-      "bytes": 438,
-      "change": "add",
-      "path": "tests/fixtures/milestones/m19-rank-vector.frame",
-      "sha256": "c7a14424517ab9df2f1a999a98fddc1fe43468cded2992147fbec36137b9e386"
-    }
+  "changes": "Research documentation, public arithmetic/model references, fixtures, run records and integrity metadata only.",
+  "consensus_eligibility": "NotEstablished",
+  "consensus_weight": null,
+  "date": "2026-10-30",
+  "historical_evidence_scope": "Attributed source-based summaries, not original full runtime logs or a reproduction of the unpublished native corpus.",
+  "historical_milestone_summaries": 27,
+  "included_execution_records": [
+    "docs/test-evidence-m20-nr05/logs/reference_normal.json",
+    "docs/test-evidence-m20-nr05/logs/reference_optimized.json",
+    "docs/test-evidence-m20-nr05/logs/integrity_controls.json"
   ],
-  "package_kind": "overlay; extract contents into the existing public repository",
-  "publication_date": "2026-10-24",
-  "publication_performed": false,
-  "release": "public-research-through-m19",
-  "schema_version": 2,
-  "scope": {
-    "consensus_eligibility": "NotEstablished",
-    "consensus_weight": null,
-    "full_chain_exported": false,
-    "full_m15_native_relation_exported": false,
-    "full_m16_corpus_exported": false,
-    "full_m17_native_experiment_exported": false,
-    "new_cargo_dependencies": false
+  "integrity_scope": {
+    "full_inherited_source_bytes_rehashed_here": false,
+    "full_merged_verification_command": "python3 -I -B scripts/check_post_m19_update.py --merged",
+    "inherited_source_hashes": "Carried from the exact published baseline manifest.",
+    "merged_map": "Pinned baseline mapping overridden by update payload and the actual UPDATE_MANIFEST hash; SOURCE_MANIFEST excludes itself.",
+    "update_payload": "All supplied payload files are hashed; UPDATE_MANIFEST excludes itself and SOURCE_MANIFEST to avoid circular hashes."
   },
-  "source_cutoff": "M19",
-  "validation": {
-    "all_original_m19_test_predicates_retained": true,
-    "clippy_executed": false,
-    "full_public_workspace_runtime_validation": "not performed",
-    "hosted_workflow_executed": false,
-    "native_proving_executed": false,
-    "public_baseline_manifest_blob_verified": true,
-    "python_optimized_output_equal": true,
-    "python_reference_invocations": 2,
-    "rust_build_executed": false,
-    "rust_tests_executed": false,
-    "rustfmt_executed": false,
-    "source_blob_identity_checks": 3
-  }
+  "license": "MIT OR Apache-2.0; inherited licenses and attribution must remain.",
+  "merged_manifest_entries": 230,
+  "native_source_and_dependencies_modified": false,
+  "new_cryptographic_setup_or_proofs": false,
+  "new_hosted_ci_run": false,
+  "new_integrity_checker_controls": 8,
+  "new_native_rust_build_or_tests": false,
+  "new_network_campaign": false,
+  "new_public_reference_checks": 9,
+  "original_archive_byte_identity_claimed": false,
+  "original_archive_bytes_recovered": false,
+  "overlay_file_count": 45,
+  "overlay_files": [
+    "PUBLIC_UPDATE.json",
+    "README.md",
+    "SOURCE_MANIFEST.sha256",
+    "UPDATE_MANIFEST.sha256",
+    "docs/MILESTONES_M20_NR05.md",
+    "docs/NR05_SAMPLED_BATCH_BOUND.md",
+    "docs/NR05_VISIBLE_AUDIT.md",
+    "docs/RESEARCH_STATUS.md",
+    "docs/test-evidence-m20-nr05/BASELINE_MANIFEST.sha256",
+    "docs/test-evidence-m20-nr05/EVIDENCE_INDEX.md",
+    "docs/test-evidence-m20-nr05/HISTORICAL_RESULTS.json",
+    "docs/test-evidence-m20-nr05/SOURCE_REGISTER.json",
+    "docs/test-evidence-m20-nr05/logs/integrity_controls.json",
+    "docs/test-evidence-m20-nr05/logs/reference_normal.json",
+    "docs/test-evidence-m20-nr05/logs/reference_optimized.json",
+    "docs/test-evidence-m20-nr05/milestones/M20.md",
+    "docs/test-evidence-m20-nr05/milestones/M21.md",
+    "docs/test-evidence-m20-nr05/milestones/M22.md",
+    "docs/test-evidence-m20-nr05/milestones/M23.md",
+    "docs/test-evidence-m20-nr05/milestones/M24.md",
+    "docs/test-evidence-m20-nr05/milestones/M25.md",
+    "docs/test-evidence-m20-nr05/milestones/M26.md",
+    "docs/test-evidence-m20-nr05/milestones/M27.md",
+    "docs/test-evidence-m20-nr05/milestones/M28.md",
+    "docs/test-evidence-m20-nr05/milestones/M29.md",
+    "docs/test-evidence-m20-nr05/milestones/M30.md",
+    "docs/test-evidence-m20-nr05/milestones/M31.md",
+    "docs/test-evidence-m20-nr05/milestones/M32.md",
+    "docs/test-evidence-m20-nr05/milestones/M33.md",
+    "docs/test-evidence-m20-nr05/milestones/M34.md",
+    "docs/test-evidence-m20-nr05/milestones/M35.md",
+    "docs/test-evidence-m20-nr05/milestones/M36.md",
+    "docs/test-evidence-m20-nr05/milestones/M37.md",
+    "docs/test-evidence-m20-nr05/milestones/M38.md",
+    "docs/test-evidence-m20-nr05/milestones/M39.md",
+    "docs/test-evidence-m20-nr05/milestones/M40.md",
+    "docs/test-evidence-m20-nr05/milestones/M41.md",
+    "docs/test-evidence-m20-nr05/milestones/NR01.md",
+    "docs/test-evidence-m20-nr05/milestones/NR02.md",
+    "docs/test-evidence-m20-nr05/milestones/NR03.md",
+    "docs/test-evidence-m20-nr05/milestones/NR04.md",
+    "docs/test-evidence-m20-nr05/milestones/NR05.md",
+    "research/post-m19/reproduce.py",
+    "scripts/check_post_m19_update.py",
+    "tests/fixtures/post-m19/reference_parameters.json"
+  ],
+  "package_type": "overlay",
+  "reconstructed_update": true,
+  "reference_execution_modes": [
+    "normal",
+    "optimized"
+  ],
+  "reference_results": "Both modes passed all nine checks with identical stdout; eight integrity controls passed.",
+  "research_hosted_ci": "PENDING",
+  "same_checks_repeated_not_additive": true,
+  "schema": "pout-public-update-v2",
+  "title": "M20-M41 and NR01-NR05 public research update"
 }

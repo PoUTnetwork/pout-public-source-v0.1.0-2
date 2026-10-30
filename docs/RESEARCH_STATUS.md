@@ -1,55 +1,50 @@
-# Public research status - through M19
+# Public research status
 
-Publication date: 24 October 2026. This release is a selected-source overlay,
-not the complete development workspace and not a mainnet release.
+As of 30 October 2026. The public record now documents M20-M41 and NR01-NR05
+in addition to the earlier selected source through M19. Later public material
+consists of attributed historical summaries, adapted mathematical notes and
+newly executed small Python references. It is not the full native research stack.
 
-## Available in this repository
+## Current findings
 
-The previously published CWC serial/parallel model, verification-only Groth16
-component, resource-accounting controls, local byte-observation example and finite
-Python dataset remain available. This overlay adds the M19 causal byte/history
-experiment, its eight tests, a retained M17 native Rank vector and a compact
-Python reference for selected M14/M18 results and byte encodings.
+Content validity, local completion, observed arrival and signatures are distinct
+from independent useful demand or physical resource cost. M20-M29 expose and
+measure several of these boundaries. M30-M38 add restricted resource arguments,
+cumulative-disclosure and reconstruction counterexamples, and concrete functional
+constraint controls while retaining the missing accepted-proof/resource bridge.
 
-## Engineering results versus this public export
+M39-M41 exercise conditional normalization, replay, checkpoint locks and selected
+history in a synthetic trust model. The stage results do not provide permissionless
+issuance, complete observation closure or a deployed finality network. M41 progress
+also has a later prepared-last-batch review issue; its control-child repair remains
+a specification, not an executed fix.
 
-| Checkpoint | Recorded full engineering workspace | Public verification boundary |
-| --- | --- | --- |
-| M14 | 1,034 passed; 0 failed; 8 ignored | Compact sixteen-profile Python reference; no DAG corpus export |
-| M15 | 1,042 passed; 0 failed; 8 ignored | Exact-intent specification and retained context; native relation not exported |
-| M16 | 1,051 passed; 0 failed; 8 ignored | Bound/accounting specification; full finite corpus not exported |
-| M17 | 1,057 passed; 0 failed; 8 ignored | Retained full-pair digest vector and downstream Rust check |
-| M18 | No new Rust execution; M17 results reused | Two finite selection/conditioning references |
-| M19 | 1,065 passed; 0 failed; 8 ignored | Causal byte adapter, semantic reference and eight public test functions |
+NR01-NR05 examine joint advice, prepared proof costs, finite prover-resource
+admission and sampled-batch raw-label recovery. NR05's worked ideal-oracle batch
+bounds are below 2^-26 and 2^-136 for two different target laws. The original NR05
+stage was mathematical work; the new public script verifies selected arithmetic
+only. The visible response is a separate disclosed-witness specification, not an
+implemented hidden proof system.
 
-These are reported historical engineering counts, not independently reproduced
-public totals. Do not sum checkpoints, repeats or model worlds as unique tests.
-Hosted CI for these engineering checkpoints remained pending at their source
-freezes. Historical M17 validation includes a corrected test-iterator lint and a
-restored-log parser reconciliation; neither failure is evidence that this public
-package was built. M19 also retained pre-corpus lint/formatting corrections.
+## Evidence and boundaries
 
-## Checks made when assembling this overlay
+- [Milestone chronology](MILESTONES_M20_NR05.md)
+- [Evidence index and executable references](test-evidence-m20-nr05/EVIDENCE_INDEX.md)
+- [Conditional batch argument](NR05_SAMPLED_BATCH_BOUND.md)
+- [Visible response accounting](NR05_VISIBLE_AUDIT.md)
+- [Earlier public source and experiments](MILESTONES_M14_M19.md)
 
-No Rust compiler, Cargo build/test, rustfmt, Clippy or hosted workflow was run.
-Source transfer, public path/dependency review, golden-byte reconstruction and
-archive/integrity/privacy checks are separate from runtime validation. The
-selected standard-library Python references were run normally and under -O;
-the report identifies their limited scope. Downstream Rust results are pending.
+Source-reported workspace/focused/restored counts are not additive. Historical
+failures remain distinct from corrected executions. This update did not rerun
+Rust, Clippy, cryptographic setup/proving, hosted research CI or a native network.
+Separate application/demo CI does not certify the root research claims.
 
-All original Rust test predicates are retained in the exported M19 adapter;
-serialization-only adaptation means this is nevertheless a new public source
-composition requiring its own runtime checks before a new pass claim.
+Current PoUT consensus eligibility: `NotEstablished`.
+Current PoUT consensus weight: `None`.
+Root-research hosted validation: `HOSTED_CI_PENDING`.
 
-## What remains open
-
-Physical resource scarcity, independent useful demand, resource ownership,
-coalition resistance, global canonical consumption, honest-production and network
-delay assumptions, and distributed consensus safety/finality remain unestablished.
-A local test result or a valid cryptographic proof does not fill those gaps.
-No production asset, wallet, bridge, token migration or service deployment is
-included. Existing prototype platform limitations remain.
-
-See [milestone detail](MILESTONES_M14_M19.md),
-[validation scope](VALIDATION_M19_PUBLIC.md),
-[publication scope](PUBLIC_RELEASE_SCOPE.md) and [security](SECURITY.md).
+Open gates include realistic full-system resource accounting, same-budget hidden
+proof extraction, malicious registration and challenge selection, charged lifetime
+history, independently useful demand, resource-derived membership and a complete
+construction-specific network safety/liveness argument. No production readiness,
+external audit, native token entitlement, price or return is established.

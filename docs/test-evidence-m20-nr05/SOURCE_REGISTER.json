@@ -1,0 +1,44 @@
+{
+  "as_of": "2026-10-30",
+  "engineering_sources": [
+    {
+      "basename": "STATUS.md",
+      "git_blob_sha1": "efe1df1c8fe702e8ad9e4d124e6a75c367ff7dbf",
+      "id": "S1",
+      "use": "Milestone history, execution classifications, limitations and later corrections; selected sections read, not a full export."
+    },
+    {
+      "basename": "NATIVE_RESOURCE_NR05_SAMPLED_BATCH_BOUND.md",
+      "git_blob_sha1": "0e76088e6769948ccce35334b7171fcc188dd3c7",
+      "id": "S2",
+      "use": "Full sampled-codec argument, worked parameters, exact arithmetic and model limits."
+    },
+    {
+      "basename": "NATIVE_RESOURCE_NR05_VISIBLE_AUDIT.md",
+      "git_blob_sha1": "d6d5f8a860f078f39fdbc006e5a3809c8b833574",
+      "id": "S3",
+      "use": "Registration and response format, cost formulas and conditional acceptance bridge; selected sections read."
+    },
+    {
+      "basename": "native-resource-nr03/RESULTS.json",
+      "git_blob_sha1": "a94ddcb48465c9047e6cb33829663597b952fafc",
+      "id": "S4",
+      "use": "Executed finite calibration classification and operation counts; selected fields read."
+    }
+  ],
+  "interpretation": [
+    "Git blob identifiers are provenance references, not an external audit or a proof that unpublished source is available to public reviewers.",
+    "Public summaries are newly written adaptations, not byte-identical exports of the engineering reports.",
+    "No historical whole-workspace test, cryptographic proof campaign, network campaign or original analytical program was rerun to build this update.",
+    "New reference execution records describe only the included public scripts.",
+    "The original lost archive bytes are unavailable; this is a reconstructed update, not a hash-identical restoration."
+  ],
+  "public_baseline": {
+    "commit": "b5cb49b7fbaf76d4f523dcfe014d57829b438dd4",
+    "manifest_entries": 189,
+    "manifest_git_blob_sha1": "5d9a4f7c31faf3bfdddbfaf769e139d707a7e5b0",
+    "manifest_sha256": "8582fc7ea5215f130ea00f80b34ec6e734bf921a6c3980006d99c2df970bc4e0",
+    "repository": "PoUTnetwork/pout-public-source-v0.1.0-2"
+  },
+  "schema": "pout-public-source-register-v1"
+}

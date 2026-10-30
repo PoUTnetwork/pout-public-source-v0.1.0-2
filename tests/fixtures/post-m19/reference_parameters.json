@@ -1,0 +1,20 @@
+{
+  "schema": "pout-post-m19-reference-parameters-v1",
+  "codec": {
+    "contexts": 2,
+    "vertices_per_context": 1024,
+    "label_bits": 256,
+    "state_bits": 102208,
+    "online_queries": 65536,
+    "rounds": 2,
+    "cache_vertices": 576,
+    "max_indegree": 1,
+    "profiles": [
+      {"draws_per_context": 64, "counterfactual_copies": 512, "expected_records": 33622016, "expected_locator_bits": 26, "expected_saved_bits": 204, "expected_codec_exponent": -15232},
+      {"draws_per_context": 384, "counterfactual_copies": 128, "expected_records": 8488960, "expected_locator_bits": 24, "expected_saved_bits": 208, "expected_codec_exponent": -17536}
+    ]
+  },
+  "visible_format": {"header_bytes": 128, "signature_bytes": 64, "index_bytes": 4, "word_bytes": 32, "digest_bytes": 32, "merkle_depth": 10, "registration_bytes": 512},
+  "leakage": {"positions_per_context": 1024, "contexts": 2, "audits": 10240},
+  "quorum": {"signers": 4, "quorum": 3, "max_byzantine": 1}
+}
