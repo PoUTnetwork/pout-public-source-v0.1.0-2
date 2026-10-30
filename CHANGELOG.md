@@ -1,5 +1,24 @@
 # Changelog
 
+## Public research record through M41 and NR05 - October 30, 2026
+
+- Added 27 attributed English milestone summaries for M20-M41 and NR01-NR05,
+  a structured historical record and a source/evidence index.
+- Added two adapted NR05 mathematical and visible-format notes. These preserve
+  their ideal-model assumptions, counterexamples and remaining proof obligations.
+- Added nine public arithmetic/finite-model checks, executed in normal and
+  optimized Python modes. Both modes repeat the same nine checks, not eighteen.
+- Retained three execution records: two reference runs and eight separate
+  manifest-checker controls. Original native Rust/circuit logs are not exported.
+- Updated the merged source manifest and added an update manifest and checker.
+  The reconstructed research overlay is not a byte-identical recovered archive.
+- Preserved the existing native public source through M19, Cargo dependencies,
+  license files and all inherited research evidence. No new Rust/proving,
+  network or hosted validation is claimed.
+- Corrected the release-scope wording to distinguish the native source boundary
+  from the newer documentation/reference boundary; retained all older changelog
+  entries unchanged. The correction changes no research program or run record.
+
 ## Public research update through M19 - October 24, 2026
 
 - Added the M19 causal byte/history experiment, semantic reference, eight test

@@ -12,6 +12,15 @@
   "consensus_eligibility": "NotEstablished",
   "consensus_weight": null,
   "date": "2026-10-30",
+  "documentation_correction": {
+    "applies_to_public_commit": "bc24f39735f981e02e08f609491f9278d5341129",
+    "changed_documentation": [
+      "CHANGELOG.md",
+      "docs/PUBLIC_RELEASE_SCOPE.md"
+    ],
+    "purpose": "Align current publication scope and changelog with the M20-NR05 documentation/reference update.",
+    "research_programs_and_execution_records_unchanged": true
+  },
   "historical_evidence_scope": "Attributed source-based summaries, not original full runtime logs or a reproduction of the unpublished native corpus.",
   "historical_milestone_summaries": 27,
   "included_execution_records": [
@@ -37,8 +46,9 @@
   "new_public_reference_checks": 9,
   "original_archive_byte_identity_claimed": false,
   "original_archive_bytes_recovered": false,
-  "overlay_file_count": 45,
+  "overlay_file_count": 47,
   "overlay_files": [
+    "CHANGELOG.md",
     "PUBLIC_UPDATE.json",
     "README.md",
     "SOURCE_MANIFEST.sha256",
@@ -46,6 +56,7 @@
     "docs/MILESTONES_M20_NR05.md",
     "docs/NR05_SAMPLED_BATCH_BOUND.md",
     "docs/NR05_VISIBLE_AUDIT.md",
+    "docs/PUBLIC_RELEASE_SCOPE.md",
     "docs/RESEARCH_STATUS.md",
     "docs/test-evidence-m20-nr05/BASELINE_MANIFEST.sha256",
     "docs/test-evidence-m20-nr05/EVIDENCE_INDEX.md",
