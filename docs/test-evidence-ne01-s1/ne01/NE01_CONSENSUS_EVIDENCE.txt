@@ -1,0 +1,81 @@
+PoUT NETWORK  /  NE-01
+CONSENSUS-ELIGIBILITY MILESTONE: ESTABLISHED
+7 NOVEMBER 2026  |  RESEARCH MODEL  |  COMMIT 789e90aa
+
+FROM COUNTEREXAMPLES TO AN ESTABLISHED RESULT
+
+After an extended research cycle, repeated attempts to break our own work, and
+multiple implementation reviews, the NE-01 storage-power model has achieved
+its first clean eight-epoch Established result. This is a major functional
+milestone on the road to PoUT mainnet engineering.
+
+    "consensus_eligibility": "Established"
+    "consensus_weight": 512
+    "unmet_test_model_criteria": 0
+
+THE ACTUAL RELEASE RUN
+
+  8 / 8       Audited epochs, with eight distinct beacon values
+  16 / 0      Passed / failed audit results
+  512         Live model power units (256 per test provider)
+  64 / 0      NE-01 tests passed / failed, including real-component integration
+  24          Internal finding groups addressed in code or documentation
+
+The recorded release example exited 0. The committed run log and the complete
+64-test output are preserved in this package exactly as generated. This is an
+observed result in the NE-01 test model, not an independently audited network.
+
+WHAT WE BUILT
+
+- Canonical encrypted-sector commitments and Merkle openings.
+- Checkpointed ratchet sealing tied to sector identity and chunk contents.
+- Beacon-sampled audit verification with a pinned audit policy.
+- Funded, conserved storage-power accounting with bounded issuance and expiry.
+- Eligibility calculated from the intake's own accepted audits and live roots.
+- Integration tests covering CWC, bounded DAG ordering and delivery receipts.
+
+WHAT THE REGRESSION TESTS NOW DEFEND
+
+- Forged or edited AuditPass and audit history values cannot be submitted through
+  the public Rust API as genuine issued evidence.
+- Genesis bookkeeping, outside roots and delivery receipts do not create power.
+- Replayed, invalid and mismatched audit responses are rejected.
+- A missing audit after a clean run revokes Established in the model.
+- Ledger conservation is checked against an independent 2,000-action model.
+
+THE NEXT CHAPTER
+
+Mainnet engineering is scheduled to start Monday, 9 November 2026. Work will
+build on the new storage-power framework and its existing CWC/DAG adapters.
+This is the beginning of mainnet engineering, not an announced network launch.
+
+EVIDENCE AND VERIFICATION
+
+Recorded command:
+  cargo run --locked -q --release -p pout-useful-storage-research --example ne01_skeleton
+Recorded targeted tests:
+  cargo test --locked -p pout-useful-storage-research --features real-components
+
+Use the PDF overview for a compact milestone brief, the original logs for exact
+run output, and `python3 verify_evidence.py` to check package integrity. The
+verification script checks source-byte consistency; it does not execute Rust.
+Source revision: 789e90aa3884904ad504c86fcbe121d08608be3c.
+
+TECHNICAL SCOPE — RESEARCH, NOT PRODUCTION CERTIFICATION
+
+Established is the NE-01 model result under its documented eight-epoch acceptance
+profile. It does not establish production consensus soundness, physically
+independent replica storage or a scarce-resource theorem. The current research
+sealing profile has no measured storage/time security margin: retaining 1 KiB
+of chain finals permits checkpoint regeneration in about 0.0041 seconds against
+a five-second laboratory window. Seven production gates remain open, including
+external review, multi-device testing, beacon unpredictability, improved delay
+and depth robustness, the resource theorem, and hosted CI.
+
+The full-workspace run recorded 1,236 passed, 13 failed and 8 ignored; the
+13 failures were in an unchanged ingress_cut test binary requiring environment
+admissions and were reproduced on the parent revision. They are not counted
+as passes. The NE-01 targeted run itself recorded 64 passed, zero failed.
+
+No Rust rerun or independent audit was performed while preparing this brief.
+The evidence is a test-model milestone, not a token or financial claim.

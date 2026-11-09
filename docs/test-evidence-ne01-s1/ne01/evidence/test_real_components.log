@@ -1,0 +1,90 @@
+   Compiling pout-useful-storage-research v0.1.0 (/home/user/pout-network/crates/pout-useful-storage-research)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.87s
+     Running unittests src/lib.rs (target/debug/deps/pout_useful_storage_research-44f10e57d07ece0c)
+
+running 39 tests
+test adapters::tests::owner_keys_and_owners_are_domain_separated ... ok
+test adapters::tests::fork_views_respect_the_vertex_bound ... ok
+test adapters::tests::unchanged_ledger_is_the_empty_block ... ok
+test audit::tests::a_genuine_opening_of_another_leaf_claimed_at_the_expected_position_fails ... ok
+test audit::tests::a_genuine_opening_at_the_wrong_position_or_with_the_wrong_label_fails ... ok
+test audit::tests::a_fake_layer_below_final_is_caught_by_the_dependent_chain ... ok
+test adapters::tests::sha2_agrees_on_fips_vectors_and_block_boundaries ... ok
+test audit::tests::self_chosen_challenges_never_pass_the_public_verifier ... ok
+test audit::tests::stale_and_replayed_responses_are_rejected ... ok
+test audit::tests::trivial_profiles_and_malformed_commitments_are_rejected_without_panics ... ok
+test audit::tests::chains_broken_at_their_first_link_are_caught ... ok
+test audit::tests::wrong_positions_and_cross_sector_openings_are_rejected ... ok
+test beacon::tests::fixture_beacon_is_deterministic_and_gated_by_publication ... ok
+test chunk::tests::bounds_and_contiguity ... ok
+test chunk::tests::chunk_openings_verify_and_tampering_fails ... ok
+test chunk::tests::cross_sector_openings_fail ... ok
+test eligibility::tests::corrupted_ledgers_and_zero_unit_profiles_are_not_established ... ok
+test eligibility::tests::failures_and_short_histories_block_eligibility ... ok
+test eligibility::tests::genesis_stock_is_never_weight_and_empty_history_is_not_established ... ok
+test hash::tests::encoder_is_prefix_free_per_domain ... ok
+test hash::tests::fips_180_4_vectors ... ok
+test audit::tests::fake_chain_finals_are_caught_whenever_a_dependent_chain_is_sampled ... ok
+test hash::tests::padding_boundaries ... ok
+test merkle::tests::bounds_are_enforced ... ok
+test audit::tests::unbound_label_trees_fail_every_audit ... ok
+test merkle::tests::leaf_count_is_bound_into_the_root ... ok
+test power::tests::genesis_and_spends_conserve_and_reject_invalid_shapes ... ok
+test power::tests::invariant_checkers_detect_corrupted_state ... ok
+test power::tests::overflowing_spends_genesis_and_prices_are_rejected_not_wrapped ... ok
+test power::tests::registry_prices_uploads_with_finite_credits_and_caps_replicas ... ok
+test ratchet_seal::tests::every_step_and_seed_binds_sector_and_chunk_digest ... ok
+test audit::tests::honest_responses_pass_for_many_epochs_and_cover_every_position_kind ... ok
+test ratchet_seal::tests::leaf_indexes_round_trip_and_profiles_are_validated ... ok
+test ratchet_seal::tests::finals_alone_regenerate_every_checkpoint_within_n_steps ... ok
+test ratchet_seal::tests::sealing_is_deterministic_and_bound_to_sector_and_data ... ok
+test traffic::tests::receipts_pay_renew_and_dedupe_without_touching_power ... ok
+test ratchet_seal::tests::regeneration_matches_stored_labels_and_costs_the_serial_prefix ... ok
+test hash::tests::million_a_vector_with_irregular_chunking ... ok
+test merkle::tests::every_leaf_of_every_small_tree_opens_and_verifies ... ok
+
+test result: ok. 39 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.27s
+
+     Running tests/real_components.rs (target/debug/deps/real_components-6fdbc484faaf5d5d)
+
+running 5 tests
+test t2_cwc_executes_issue_spend_and_retire_transitions_and_rejects_bad_guards ... ok
+test t5_end_to_end_epoch_two_providers_pass_fail_and_receipt_stay_not_established ... ok
+test t3_dag_fork_views_change_challenges_and_canonical_replay_is_deterministic ... ok
+test t4_protocol_receipts_settle_traffic_and_never_issue_power ... ok
+test t1_hand_written_sha256_matches_sha2_across_lengths ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.28s
+
+     Running tests/skeleton.rs (target/debug/deps/skeleton-ab6098c2833dd8c0)
+
+running 10 tests
+test garbage_cannot_fail_an_honest_sector_and_registration_is_checked ... ok
+test clean_eight_epoch_run_establishes_test_model_eligibility_and_a_miss_revokes_it ... ok
+test sectors_outside_their_paid_period_are_not_counted ... ok
+test repeated_beacon_values_do_not_count_as_distinct ... ok
+test spent_units_expire_with_their_root ... ok
+test std_only_epoch_with_pass_failure_missing_and_receipt ... ok
+test weight_is_capped_by_funded_bytes_and_by_the_paid_period ... ok
+test self_dealing_pays_the_same_and_never_earns_faster_than_honest_storage ... ok
+test regeneration_control_records_measured_ratio ... ok
+test nr21_invariants_hold_over_randomized_histories ... ok
+
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.16s
+
+   Doc-tests pout_useful_storage_research
+
+running 10 tests
+test crates/pout-useful-storage-research/src/eligibility.rs - eligibility::AuditHistory (line 50) - compile fail ... ok
+test crates/pout-useful-storage-research/src/audit.rs - audit::AuditPass (line 499) - compile fail ... ok
+test crates/pout-useful-storage-research/src/audit.rs - audit::AuditPass (line 505) - compile fail ... ok
+test crates/pout-useful-storage-research/src/audit.rs - audit::AuditPass (line 493) - compile fail ... ok
+test crates/pout-useful-storage-research/src/eligibility.rs - eligibility::evaluate (line 210) - compile fail ... ok
+test crates/pout-useful-storage-research/src/eligibility.rs - eligibility::AuditHistory (line 60) - compile fail ... ok
+test crates/pout-useful-storage-research/src/eligibility.rs - eligibility::AuditHistory (line 66) - compile fail ... ok
+test crates/pout-useful-storage-research/src/power.rs - power::PowerLedger::issue_root (line 501) - compile fail ... ok
+test crates/pout-useful-storage-research/src/power.rs - power::UploadLineage (line 136) - compile fail ... ok
+test crates/pout-useful-storage-research/src/power.rs - power::PowerLedger::issue_root (line 513) - compile fail ... ok
+
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.13s
+

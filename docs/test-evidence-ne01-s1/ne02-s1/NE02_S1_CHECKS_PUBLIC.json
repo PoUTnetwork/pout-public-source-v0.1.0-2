@@ -1,0 +1,43 @@
+{
+  "evidence_limit": "Actual local execution on a prior research checkout; this public package does not include the complete private Rust workspace or rerun the native tests.",
+  "evidence_origin": "Recorded 2026-11-07 release run; public extraction from source check report, not a fresh execution",
+  "external_security_review": false,
+  "hosted_ci": "PENDING",
+  "ne01_test_model": {
+    "eligibility": "Established",
+    "scope": "NE01_TEST_MODEL_OWNER_RULE_2026_11_07",
+    "weight": 512
+  },
+  "new_native_tests_executed_for_this_public_archive": false,
+  "production_security_established": false,
+  "recorded_check_exits": {
+    "backup_selftest": 0,
+    "cargo_fmt": 0,
+    "crate_clippy_real_components": 0,
+    "crate_test_real_components": 0,
+    "ne01_skeleton_dev": 0,
+    "ne01_skeleton_release": 0,
+    "ne02_margin_dev": 0,
+    "ne02_margin_release": 0,
+    "retrieval_helper_build": 0,
+    "workspace_clippy": 0
+  },
+  "recorded_release_example": {
+    "command": "cargo run --locked -q --release -p pout-useful-storage-research --features real-components --example ne02_margin_baseline",
+    "exit_code": 0,
+    "schema": "NE02_S1_MARGIN_BASELINE_V1",
+    "source_exact_bytes": true,
+    "verdict": "NE01_SEAL_NO_STORAGE_TIME_MARGIN"
+  },
+  "result_sha256": "24e64820735281622da4355863f476a578654867c113b119518705df033113c3",
+  "schema": "POUT_NE02_S1_PUBLIC_CHECKS_V1",
+  "source_result_blob_sha1": "3699d4cea8d679cf2c29aef54bff1e87648caf4c",
+  "source_revision": "ef7fdb182db9e087de8c8198ea76c39a3e332aa7",
+  "workspace_test": {
+    "base_failure_reproduced": true,
+    "exit_code": 101,
+    "failure_class": "unchanged pre-existing environment admission in ingress_cut",
+    "failure_count": 13,
+    "workspace_green": false
+  }
+}

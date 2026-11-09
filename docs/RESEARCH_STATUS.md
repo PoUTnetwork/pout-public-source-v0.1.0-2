@@ -1,50 +1,68 @@
 # Public research status
 
-As of 30 October 2026. The public record now documents M20-M41 and NR01-NR05
-in addition to the earlier selected source through M19. Later public material
-consists of attributed historical summaries, adapted mathematical notes and
-newly executed small Python references. It is not the full native research stack.
+**Updated:** 9 November 2026. Public native source through selected M19;
+selected documentation and experimental evidence through NE-02 S1.
 
-## Current findings
+## Earlier findings (M20-M41 and NR01-NR05)
 
-Content validity, local completion, observed arrival and signatures are distinct
-from independent useful demand or physical resource cost. M20-M29 expose and
-measure several of these boundaries. M30-M38 add restricted resource arguments,
-cumulative-disclosure and reconstruction counterexamples, and concrete functional
-constraint controls while retaining the missing accepted-proof/resource bridge.
+Content validity, local completion, observed arrival and signatures are
+distinct from independently useful demand or physical resource cost. M20-M29
+exposed several boundaries. M30-M38 added conditional resource arguments,
+reconstruction counterexamples and functional constraint controls while
+preserving the missing accepted-proof/resource bridge.
 
-M39-M41 exercise conditional normalization, replay, checkpoint locks and selected
-history in a synthetic trust model. The stage results do not provide permissionless
-issuance, complete observation closure or a deployed finality network. M41 progress
-also has a later prepared-last-batch review issue; its control-child repair remains
-a specification, not an executed fix.
+M39-M41 exercised conditional normalization, checkpoint locks and selected
+history in a synthetic trust model, but did not establish a deployed finality
+network. NR01-NR05 examined proof costs, finite resource admission and
+sampled-batch raw-label recovery under explicit model assumptions. These are
+historical, source-reported records rather than newly reproduced native runs.
 
-NR01-NR05 examine joint advice, prepared proof costs, finite prover-resource
-admission and sampled-batch raw-label recovery. NR05's worked ideal-oracle batch
-bounds are below 2^-26 and 2^-136 for two different target laws. The original NR05
-stage was mathematical work; the new public script verifies selected arithmetic
-only. The visible response is a separate disclosed-witness specification, not an
-implemented hidden proof system.
+## Continued research (NR06-NR22)
 
-## Evidence and boundaries
+Selected studies investigated accounting and admission constraints, coordinated
+endpoint behavior, independent resource boundaries and the limits of
+endpoint-attested useful traffic. [Narrative continuity](RESEARCH_NR06_NR22_CONTINUITY.md)
+is not a complete native source or an independent security proof.
 
-- [Milestone chronology](MILESTONES_M20_NR05.md)
-- [Evidence index and executable references](test-evidence-m20-nr05/EVIDENCE_INDEX.md)
-- [Conditional batch argument](NR05_SAMPLED_BATCH_BOUND.md)
-- [Visible response accounting](NR05_VISIBLE_AUDIT.md)
-- [Earlier public source and experiments](MILESTONES_M14_M19.md)
+## NE-01 first-scaffold test model
 
-Source-reported workspace/focused/restored counts are not additive. Historical
-failures remain distinct from corrected executions. This update did not rerun
-Rust, Clippy, cryptographic setup/proving, hosted research CI or a native network.
-Separate application/demo CI does not certify the root research claims.
+A bounded, local storage-power research model reported `Established`, model
+weight 512, eight audited epochs and 16 passing audits. Its public evidence
+contains 64 focused passing tests and reproducible source provenance.
+The model's beacon is a fixture. No operational peer network or physical
+scarcity guarantee follows from the test-model result.
 
-Current PoUT consensus eligibility: `NotEstablished`.
-Current PoUT consensus weight: `None`.
-Root-research hosted validation: `HOSTED_CI_PENDING`.
+## NE-02 S1 storage/time attack
 
-Open gates include realistic full-system resource accounting, same-budget hidden
-proof extraction, malicious registration and challenge selection, charged lifetime
-history, independently useful demand, resource-derived membership and a complete
-construction-specific network safety/liveness argument. No production readiness,
-external audit, native token entitlement, price or return is established.
+S1 fixed a five-second response contract and compared honest storage with
+several declared regenerating strategies. All declared shortcuts were accepted
+by the recorded NE-01 public verifier. A single holder with one shared
+ciphertext copy and 2 KiB of retained label state still received the same
+model weight. The S1 verdict is **NO STORAGE/TIME MARGIN**. That negative
+result motivates later work, which is not included in this release.
+
+## Validation and open gates
+
+The stored S1 release JSON and attributed NE-01 evidence are available in
+`docs/test-evidence-ne01-s1/`. Their public Python checks validate integrity,
+accounting relations and declared numeric results, not a fresh Rust execution.
+
+Root / operational consensus eligibility: `NotEstablished`.
+Root / operational consensus weight: `None`.
+Scoped NE-01 test-model eligibility: `Established` (weight 512).
+Research hosted validation: `HOSTED_CI_PENDING`.
+
+Open gates: independently reviewable resource scarcity, externally separated
+multi-device tests, unpredictable challenge beacons, delay primitive, depth
+robustness, resource-consensus theorem, hosted CI, and complete network
+safety/liveness. No security certification, mainnet, native token entitlement,
+price or return is established by this release.
+
+## Navigation
+
+- [Release classification](PUBLIC_NE01_NE02_S1_RELEASE.md)
+- [NE-01 evidence](NE01_CONSENSUS_TEST_MODEL.md)
+- [NE-02 S1](NE02_S1_STORAGE_TIME_MARGIN.md)
+- [NR06-NR22 continuity](RESEARCH_NR06_NR22_CONTINUITY.md)
+- [M20-NR05 chronology](MILESTONES_M20_NR05.md)
+- [Older evidence index](test-evidence-m20-nr05/EVIDENCE_INDEX.md)

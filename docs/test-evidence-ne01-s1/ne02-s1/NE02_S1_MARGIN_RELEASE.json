@@ -1,0 +1,281 @@
+{
+ "schema": "NE02_S1_MARGIN_BASELINE_V1",
+ "build": "release",
+ "real_components": true,
+ "contract": {
+  "version": "NE02_STORAGE_TIME_CONTRACT_V1",
+  "id": "f13b440bdce264b0e2377daa86600e4855ed4eb0534f3e21586303b4cc2eb609",
+  "audit_window_seconds": 5,
+  "hardware_speedups": [
+   1,
+   10,
+   100
+  ],
+  "primary_hardware_speedup": 10,
+  "gap_tolerance_permille": 50,
+  "deficits_permille": [
+   500,
+   250,
+   100
+  ],
+  "primary_deficit_permille": 250,
+  "acceptance_epochs": 8,
+  "security_bits": 20,
+  "required_samples": [
+   {
+    "deficit_permille": 500,
+    "samples_per_epoch": 3
+   },
+   {
+    "deficit_permille": 250,
+    "samples_per_epoch": 8
+   },
+   {
+    "deficit_permille": 100,
+    "samples_per_epoch": 34
+   }
+  ]
+ },
+ "host_speed": {
+  "threads": 4,
+  "timed_steps": 524288,
+  "repetitions_min_of": 3,
+  "reference_step_ns": 932.268,
+  "own_template_step_ns": 680.6,
+  "sha2_template_step_ns": 126.466,
+  "software_speedup": 7.371,
+  "all_implementations_agree": true
+ },
+ "setup": {
+  "profile": {
+   "n": 4096,
+   "k": 64,
+   "layers": 2
+  },
+  "chunks": 16,
+  "chunk_bytes": 4096,
+  "replicas": 2,
+  "claimed_bytes": 131072,
+  "honest_seal_seconds": 0.098275,
+  "honest_seal_steps": 131072,
+  "honest_state_vs_chunk_bytes": [
+   {
+    "chunk_bytes": 512,
+    "honest_label_bytes": 66560,
+    "honest_tree_bytes": 133280
+   },
+   {
+    "chunk_bytes": 4096,
+    "honest_label_bytes": 66560,
+    "honest_tree_bytes": 133280
+   },
+   {
+    "chunk_bytes": 65536,
+    "honest_label_bytes": 66560,
+    "honest_tree_bytes": 133280
+   }
+  ]
+ },
+ "live_runs": [
+  {
+   "strategy": "Honest",
+   "state_bytes": 199840,
+   "work_steps": 0,
+   "model_depth_steps": 0,
+   "seconds": 0.000138,
+   "within_window_on_this_host": true,
+   "public_verifier": "accepted"
+  },
+  {
+   "strategy": "FinalsParallel",
+   "state_bytes": 1024,
+   "work_steps": 131072,
+   "model_depth_steps": 4096,
+   "seconds": 0.04043,
+   "within_window_on_this_host": true,
+   "public_verifier": "accepted"
+  },
+  {
+   "strategy": "Spaced/8",
+   "state_bytes": 9216,
+   "work_steps": 114688,
+   "model_depth_steps": 448,
+   "seconds": 0.041204,
+   "within_window_on_this_host": true,
+   "public_verifier": "accepted"
+  },
+  {
+   "strategy": "ResealSerial",
+   "state_bytes": 0,
+   "work_steps": 131072,
+   "model_depth_steps": 131072,
+   "seconds": 0.122241,
+   "within_window_on_this_host": true,
+   "public_verifier": "accepted"
+  }
+ ],
+ "all_strategies_accepted": true,
+ "single_holder_intake_run": {
+  "provider_prefix": "a0a0a0a0",
+  "replicas_held": 2,
+  "claimed_bytes": 131072,
+  "ciphertext_copies_kept": 1,
+  "ciphertext_bytes_kept": 65536,
+  "label_state_bytes_kept": 2048,
+  "epochs": 8,
+  "slowest_answer_seconds": 0.045061,
+  "consensus_eligibility": "Established",
+  "consensus_weight": 512,
+  "scope": "NE01 test model; shows weight issued for replicas that are not separately stored"
+ },
+ "analytic_costs_match_measured": true,
+ "scenarios": [
+  {
+   "hardware_speedup": 1,
+   "max_gap_permille": 500,
+   "margin_met": false,
+   "strategies": [
+    {
+     "strategy": "Honest",
+     "stored_bytes": 530752,
+     "adversary_seconds_model_depth": 0.0,
+     "in_window": true,
+     "stored_permille": 4049,
+     "gap_permille": -3049
+    },
+    {
+     "strategy": "FinalsParallel",
+     "stored_bytes": 67584,
+     "adversary_seconds_model_depth": 0.000518,
+     "in_window": true,
+     "stored_permille": 515,
+     "gap_permille": 485
+    },
+    {
+     "strategy": "Spaced/8",
+     "stored_bytes": 83968,
+     "adversary_seconds_model_depth": 5.7e-05,
+     "in_window": true,
+     "stored_permille": 640,
+     "gap_permille": 360
+    },
+    {
+     "strategy": "ResealSerial",
+     "stored_bytes": 65536,
+     "adversary_seconds_model_depth": 0.016576,
+     "in_window": true,
+     "stored_permille": 500,
+     "gap_permille": 500
+    }
+   ]
+  },
+  {
+   "hardware_speedup": 10,
+   "max_gap_permille": 500,
+   "margin_met": false,
+   "strategies": [
+    {
+     "strategy": "Honest",
+     "stored_bytes": 530752,
+     "adversary_seconds_model_depth": 0.0,
+     "in_window": true,
+     "stored_permille": 4049,
+     "gap_permille": -3049
+    },
+    {
+     "strategy": "FinalsParallel",
+     "stored_bytes": 67584,
+     "adversary_seconds_model_depth": 5.2e-05,
+     "in_window": true,
+     "stored_permille": 515,
+     "gap_permille": 485
+    },
+    {
+     "strategy": "Spaced/8",
+     "stored_bytes": 83968,
+     "adversary_seconds_model_depth": 6e-06,
+     "in_window": true,
+     "stored_permille": 640,
+     "gap_permille": 360
+    },
+    {
+     "strategy": "ResealSerial",
+     "stored_bytes": 65536,
+     "adversary_seconds_model_depth": 0.001658,
+     "in_window": true,
+     "stored_permille": 500,
+     "gap_permille": 500
+    }
+   ]
+  },
+  {
+   "hardware_speedup": 100,
+   "max_gap_permille": 500,
+   "margin_met": false,
+   "strategies": [
+    {
+     "strategy": "Honest",
+     "stored_bytes": 530752,
+     "adversary_seconds_model_depth": 0.0,
+     "in_window": true,
+     "stored_permille": 4049,
+     "gap_permille": -3049
+    },
+    {
+     "strategy": "FinalsParallel",
+     "stored_bytes": 67584,
+     "adversary_seconds_model_depth": 5e-06,
+     "in_window": true,
+     "stored_permille": 515,
+     "gap_permille": 485
+    },
+    {
+     "strategy": "Spaced/8",
+     "stored_bytes": 83968,
+     "adversary_seconds_model_depth": 1e-06,
+     "in_window": true,
+     "stored_permille": 640,
+     "gap_permille": 360
+    },
+    {
+     "strategy": "ResealSerial",
+     "stored_bytes": 65536,
+     "adversary_seconds_model_depth": 0.000166,
+     "in_window": true,
+     "stored_permille": 500,
+     "gap_permille": 500
+    }
+   ]
+  }
+ ],
+ "chain_construction_bounds": [
+  {
+   "hardware_speedup": 1,
+   "steps_per_window": 39536318,
+   "spaced_label_fraction_of_honest_checkpoints": 1.619e-06,
+   "finals_parallel_minimal_n": 39536319,
+   "honest_seal_seconds_optimized": 160.000004,
+   "verifier_seconds_per_sample_outside_chain_0": 5.0,
+   "verifier_expected_seconds_per_sector_epoch_lower_bound": 19.375
+  },
+  {
+   "hardware_speedup": 10,
+   "steps_per_window": 395381938,
+   "spaced_label_fraction_of_honest_checkpoints": 1.619e-07,
+   "finals_parallel_minimal_n": 395381939,
+   "honest_seal_seconds_optimized": 1600.075914,
+   "verifier_seconds_per_sample_outside_chain_0": 50.002372,
+   "verifier_expected_seconds_per_sector_epoch_lower_bound": 193.759
+  },
+  {
+   "hardware_speedup": 100,
+   "steps_per_window": 3955696202,
+   "spaced_label_fraction_of_honest_checkpoints": 1.618e-08,
+   "finals_parallel_minimal_n": 3955696203,
+   "honest_seal_seconds_optimized": 16008.354432,
+   "verifier_seconds_per_sample_outside_chain_0": 500.261076,
+   "verifier_expected_seconds_per_sector_epoch_lower_bound": 1938.512
+  }
+ ],
+ "verdict": "NE01_SEAL_NO_STORAGE_TIME_MARGIN"
+}

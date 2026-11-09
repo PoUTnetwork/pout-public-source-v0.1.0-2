@@ -1,0 +1,80 @@
+{
+  "schema": "POUT_NE01_EVIDENCE_PROVENANCE_V1",
+  "source_revision": "789e90aa3884904ad504c86fcbe121d08608be3c",
+  "source_date": "2026-11-07",
+  "raw_artifacts": [
+    {
+      "bundle_file": "evidence/example_skeleton_release.log",
+      "source_path": "tests/useful-storage-ne01/example_skeleton_release.log",
+      "source_git_blob_sha1": "5b65c82c53c0ed9ead79bfd1931604a08fdae427",
+      "bytes": 2300,
+      "sha256": "0c8984469517745e090aa3f59c58c01439e1acab0bd65def94b27a3a534c3577",
+      "representation": "Exact bytes matching the committed Git blob; not a newly executed test.",
+      "origin_blob_match": true
+    },
+    {
+      "bundle_file": "evidence/skeleton-report-release.json",
+      "source_path": "tests/useful-storage-ne01/skeleton-report-release.json",
+      "source_git_blob_sha1": "dcc8c3cfa011cf2d7661cbbf67b963d6c90896ae",
+      "bytes": 2384,
+      "sha256": "960d53cabae6f57b7fafc0ec250b1647c0f3a0dc42fdce2bb9aa44a1218295ab",
+      "representation": "Exact bytes matching the committed Git blob; not a newly executed test.",
+      "origin_blob_match": true
+    },
+    {
+      "bundle_file": "evidence/test_real_components.log",
+      "source_path": "tests/useful-storage-ne01/test_real_components.log",
+      "source_git_blob_sha1": "32362eab69a9cb7e657920acddf3d749959a7982",
+      "bytes": 6131,
+      "sha256": "fe63620b23295c2141eb6909cce0653673fc08e0267a8775ec079623e3f2971d",
+      "representation": "Exact bytes matching the committed Git blob; not a newly executed test.",
+      "origin_blob_match": true
+    }
+  ],
+  "derived_files": [
+    {
+      "bundle_file": "evidence/PUBLIC_CHECKS.json",
+      "source_path": "tests/useful-storage-ne01/LOCAL_CHECKS.json",
+      "source_git_blob_sha1": "35d15b9ba6c7ec813d447819432f83c70d289a4c",
+      "representation": "Selected fields plus labelled review summary; not byte-identical to original."
+    },
+    {
+      "bundle_file": "code/eligibility_excerpts.rs",
+      "source_path": "crates/pout-useful-storage-research/src/eligibility.rs",
+      "source_git_blob_sha1": "dc5e6e99734b4003191942cad9327c586b733db7",
+      "representation": "Three exact code blocks, reordered for presentation; surrounding definitions/comments omitted."
+    },
+    {
+      "bundle_file": "NE01_CONSENSUS_EVIDENCE.txt",
+      "source_paths": [
+        "docs/NE01_USEFUL_STORAGE_SKELETON.md",
+        "tests/useful-storage-ne01/LOCAL_CHECKS.json",
+        "tests/useful-storage-ne01/skeleton-report-release.json",
+        "tests/useful-storage-ne01/test_real_components.log",
+        "crates/pout-useful-storage-research/src/eligibility.rs"
+      ],
+      "representation": "Concise editorial milestone summary of committed evidence; test scope and material limitations retained."
+    },
+    {
+      "bundle_file": "PoUT_NE01_ESTABLISHED_EVIDENCE_BRIEF.pdf",
+      "source_paths": [
+        "tests/useful-storage-ne01/skeleton-report-release.json",
+        "tests/useful-storage-ne01/test_real_components.log",
+        "docs/NE01_USEFUL_STORAGE_SKELETON.md"
+      ],
+      "representation": "One-page public editorial briefing; recorded model outputs, not new measurements."
+    }
+  ],
+  "reference_documents": [
+    {
+      "path": "docs/NE01_USEFUL_STORAGE_SKELETON.md",
+      "git_blob_sha1": "d3dbc7e9091032a77a74a8bdbac445df0af8ef72"
+    },
+    {
+      "path": "tests/useful-storage-ne01/README.md",
+      "git_blob_sha1": "90e704118cbe150e9fbe106335fa063442857750"
+    }
+  ],
+  "provenance_limits": "Hashes establish byte identity relative to the recorded identifiers, not execution authenticity, the soundness of a protocol, or independent publication of the entire source. The manifest is not digitally signed.",
+  "independent_rust_rerun": false
+}

@@ -1,8 +1,9 @@
 # Public release scope
 
-As of 30 October 2026. This repository contains selected research material, not
-an operational PoUT blockchain or an established useful-resource consensus.
-The native source boundary and the documentation boundary are different.
+As of 9 November 2026, this repository contains selected public research
+material, not an operational PoUT blockchain or established production
+consensus. The public native-source boundary and later research-documentation
+boundary are different.
 
 ## Native public source through M19
 
@@ -17,47 +18,60 @@ and M17 resource-witness experiment are not supplied. A retained Rank digest
 check does not regenerate or prove a resource witness. The M19 reporting
 adaptation uses the existing dependencies without changing native semantics.
 
-## Documentation and selected references through M41 and NR05
+## Selected research through M41 and NR05
 
-The newer update adds 27 attributed summaries for M20-M41 and NR01-NR05, two
-NR05 mathematical/format notes, a source register and an evidence index. It also
-adds nine executable Python arithmetic/finite-model checks and three actual
-execution records. Normal and optimized runs repeat the same nine references;
-the eight integrity-checker self-tests are a separate category.
+The October 30 update added 27 attributed summaries for M20-M41 and NR01-NR05,
+two NR05 mathematical/format notes, a source register and an evidence index.
+It also added nine public executable Python arithmetic/finite-model checks
+and three actual execution records. Normal and optimized runs repeat the same
+nine references; the eight integrity-checker self-tests are separate.
 
-Historical summaries are not original full runtime logs. The nine references
-do not reproduce the unpublished native, circuit or consensus implementations.
-The original NR05 work was mathematical; new public arithmetic execution does
-not turn it into an implemented resource-proof protocol. Results remain
-conditional on the explicit source, oracle, challenge and resource assumptions.
+Historical summaries are not original full runtime logs. These references do
+not reproduce unpublished native, circuit or consensus implementations. The
+original NR05 research was mathematical; public arithmetic executions do not
+turn it into a working resource-proof protocol.
 
-See [research chronology](MILESTONES_M20_NR05.md),
-[evidence index](test-evidence-m20-nr05/EVIDENCE_INDEX.md) and
-[current status](RESEARCH_STATUS.md) for the exact classifications and limits.
+## Research extension through NE-02 S1
+
+The November 9 overlay adds selected NR06-NR22 narrative continuity, an NE-01
+first-scaffold test-model result, and an NE-02 S1 storage/time attack baseline.
+The test model reported `Established` eligibility and weight 512 after eight
+model epochs and 16 verified audit passes; this is **not** production consensus.
+S1 then demonstrated that the model's original sealing does not enforce
+storage scarcity: cheaper data-regeneration strategies still passed audits.
+
+The included NE-01 evidence is a retained public release of recorded local
+results. The NE-02 S1 release-result JSON was copied byte-identically from
+the recorded local research execution and has its own reproducible arithmetic
+checks. No full private native source, proof generator or working mainnet is
+exported. No later NE-02 stage is included.
+
+See [release note](PUBLIC_NE01_NE02_S1_RELEASE.md), [S1 report](NE02_S1_STORAGE_TIME_MARGIN.md),
+[continuity note](RESEARCH_NR06_NR22_CONTINUITY.md) and
+[current status](RESEARCH_STATUS.md) for classifications and limits.
 
 ## Material not exported
 
 No complete proving circuit, setup generator, prover, production networking,
-complete blockchain, runtime database, private source archive, wallet, secret
-signing key or operator state is included. Newer hidden-proof extraction,
+complete blockchain, runtime database, private source archive, wallet,
+secret signing key or operator state is included. Hidden-proof extraction,
 resource-derived membership and full network safety/liveness remain open.
-The blockchain directory notices remain notices, not deployed modules.
+Blockchain directory notices remain notices, not deployed modules.
 
 ## Update and validation boundary
 
-The research package is an overlay for the pinned existing public repository,
-not a replacement for its complete contents. Preserve inherited source,
-Cargo.toml, Cargo.lock, dependency versions, license files and attribution.
-A later documentation-only correction updates this scope and the changelog,
-with matching metadata and manifest hashes; it does not alter the retained
-reference programs, historical evidence or their execution records.
+The November package is an overlay for the existing public repository. Preserve
+all inherited source, Cargo.toml, Cargo.lock, dependency versions, licenses,
+third-party notices and historical execution records. The existing October
+`UPDATE_MANIFEST.sha256` stays in use with updated hashes for changed public
+files; `NE02_S1_UPDATE_MANIFEST.sha256` records the newly added payload.
+The root `SOURCE_MANIFEST.sha256` covers the complete merged source tree.
 
-No new Rust build/test, rustfmt, Clippy, cryptographic setup/proving or hosted
-workflow is claimed by this update. The public Python references and integrity
-controls have their own limited execution evidence. Full merged SHA-256
-verification must include the inherited files, not only the overlay.
+No fresh Rust build/test, cryptographic setup/proving or hosted workflow is
+claimed for this publication. Earlier local execution evidence is attributed
+to its original run and checked for integrity, not passed off as a new run.
 
-There is no Git history, automated push workflow, installer or dependency-fetching
-script in the overlay. The review scripts do not publish or modify a repository.
-No external security audit, production readiness or consensus eligibility is
-established. Eligibility remains `NotEstablished`; weight remains `None`.
+No Git history, automated push workflow, installer or dependency-fetching
+script is distributed in this overlay. Review scripts do not publish or
+modify a repository. There is no external security certification, production
+readiness, operational token entitlement or demonstrated trading value.

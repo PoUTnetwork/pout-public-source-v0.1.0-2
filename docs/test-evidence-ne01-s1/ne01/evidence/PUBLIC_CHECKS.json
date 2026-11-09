@@ -1,0 +1,97 @@
+{
+  "schema": "POUT_NE01_PUBLIC_CHECKS_V1",
+  "source_revision": "789e90aa3884904ad504c86fcbe121d08608be3c",
+  "source_file": "tests/useful-storage-ne01/LOCAL_CHECKS.json",
+  "source_git_blob_sha1": "35d15b9ba6c7ec813d447819432f83c70d289a4c",
+  "representation": "Public extraction and summary; not the original LOCAL_CHECKS.json file.",
+  "recorded_utc": "2026-11-07T16:21:38.505175+00:00",
+  "validation_digest": "79e195eae9cabec39c15117ef14394902a701d107153ff3a94bab855f7801ede",
+  "consensus_validation": {
+    "clean_run_reports_established": true,
+    "environment_admission_binaries": [
+      "pout-resource-proof-research tests/ingress_cut.rs"
+    ],
+    "ne01_test_binaries_in_workspace_run_all_passed": true,
+    "open_production_gates": [
+      "ExternalSecurityReview",
+      "MultiDeviceTest",
+      "BeaconUnpredictability",
+      "DelayPrimitiveGate",
+      "DepthRobustnessGate",
+      "ResourceTheorem",
+      "HostedCi"
+    ],
+    "required_checks": {
+      "backup_selftest": 0,
+      "build_retrieval_helper": 0,
+      "clippy_real_components": 0,
+      "clippy_workspace": 0,
+      "example_skeleton_dev": 0,
+      "example_skeleton_release": 0,
+      "fmt": 0,
+      "test_real_components": 0
+    },
+    "rule": "every NE-01 check exits 0; the workspace suite passes except binaries in unchanged pre-existing crates that fail only on a typed environment-admission error and fail identically on the unchanged base d4442f9",
+    "scope": "NE01_TEST_MODEL_OWNER_RULE_2026_11_07",
+    "value": true,
+    "workspace_failures_only_preexisting_environment_admission": true
+  },
+  "runs": {
+    "ne01_real_components": {
+      "command": "cargo test --locked -p pout-useful-storage-research --features real-components",
+      "profile": "test (unoptimized + debuginfo)",
+      "exit_code": 0,
+      "passed": 64,
+      "failed": 0,
+      "ignored": 0,
+      "groups": [
+        {
+          "kind": "unit",
+          "passed": 39
+        },
+        {
+          "kind": "real_components_integration",
+          "passed": 5
+        },
+        {
+          "kind": "skeleton_integration",
+          "passed": 10
+        },
+        {
+          "kind": "compile_fail_doctest",
+          "passed": 10
+        }
+      ],
+      "started_utc": "2026-11-07T16:20:25.401386+00:00",
+      "finished_utc": "2026-11-07T16:20:30.265923+00:00",
+      "log": "evidence/test_real_components.log",
+      "source_log_sha256": "fe63620b23295c2141eb6909cce0653673fc08e0267a8775ec079623e3f2971d"
+    },
+    "release_example": {
+      "command": "cargo run --locked -q --release -p pout-useful-storage-research --example ne01_skeleton",
+      "profile": "release",
+      "exit_code": 0,
+      "started_utc": "2026-11-07T16:20:42.951422+00:00",
+      "finished_utc": "2026-11-07T16:20:46.546166+00:00",
+      "log": "evidence/example_skeleton_release.log",
+      "source_log_sha256": "0c8984469517745e090aa3f59c58c01439e1acab0bd65def94b27a3a534c3577"
+    },
+    "workspace_no_fail_fast": {
+      "command": "cargo test --locked --workspace --no-fail-fast",
+      "exit_code": 101,
+      "passed": 1236,
+      "failed": 13,
+      "ignored": 8,
+      "failure_binary": "pout-resource-proof-research tests/ingress_cut.rs",
+      "reported_failure": "Experiment(MissingMetricsAdmission)",
+      "reported_identical_base_failure": true,
+      "base_revision": "d4442f9f4972da457a46f45d7c9b53da87ec883b",
+      "status": "NOT_GREEN",
+      "evidence_scope": "Totals and failure scope from committed checks/report; the full workspace logs are not included in this bundle."
+    }
+  },
+  "test_count_scope": "Do not add the 64-test targeted run to the workspace total: the runs overlap. Earlier 26-test results describe an earlier revision.",
+  "production_security_validated": false,
+  "independent_runtime_reexecution_for_this_bundle": false,
+  "bundle_review": "Committed evidence and selected source were inspected; included raw files were matched to their Git blob IDs and available recorded SHA-256 values. No fresh Rust execution or external security audit is claimed."
+}

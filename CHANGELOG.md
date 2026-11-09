@@ -1,5 +1,19 @@
 # Changelog
 
+## NE-01 / NE-02 S1 public research extension - November 9, 2026
+
+- Documented selected NR06-NR22 research continuity without exporting the
+  complete original private Rust experiments or asserting reproduced results.
+- Included independently checked NE-01 evidence: 64 focused passing tests,
+  eight model epochs, 16 successful audits, model eligibility `Established`,
+  model weight 512 and explicit open production-security gates.
+- Retained the exact S1 release-result JSON, whose negative conclusion is
+  `NE01_SEAL_NO_STORAGE_TIME_MARGIN`: storage could be reconstructed on demand.
+- Added recorded-data checkers for public integrity and internal result
+  consistency. No fresh native Rust or hosted CI run is claimed.
+- Updated the public full source manifest and its backward-compatible
+  checkers while preserving prior research files and licenses.
+
 ## Public research record through M41 and NR05 - October 30, 2026
 
 - Added 27 attributed English milestone summaries for M20-M41 and NR01-NR05,

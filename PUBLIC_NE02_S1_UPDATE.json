@@ -1,0 +1,23 @@
+{
+  "base_scope": "M41 and NR05, source through M19",
+  "cutoff": "NE02 S1, 7 November 2026",
+  "external_security_review": false,
+  "full_rust_workspace_rerun_for_public_archive": false,
+  "hosted_ci_run": false,
+  "new_native_network_deployed": false,
+  "note": "The NE01 evidence bundle is exact as packaged previously; S1 release result is exact source bytes. Source code and independent native tests are not included in this documentation and evidence overlay.",
+  "original_native_sources_included": false,
+  "package_type": "additive overlay, no deletion of inherited source",
+  "production_consensus_established": false,
+  "public_base": "PoUTnetwork/pout-public-source-v0.1.0-2",
+  "recorded_ne01_tests": {
+    "failed": 0,
+    "passed": 64,
+    "scope": "focused recorded tests"
+  },
+  "recorded_ne02_s1_conclusion": "NE01_SEAL_NO_STORAGE_TIME_MARGIN",
+  "recorded_s1_release_blob_sha1": "3699d4cea8d679cf2c29aef54bff1e87648caf4c",
+  "recorded_s1_release_sha256": "24e64820735281622da4355863f476a578654867c113b119518705df033113c3",
+  "released_utc": "2026-11-09",
+  "schema": "pout-public-ne02-s1-overlay-v1"
+}

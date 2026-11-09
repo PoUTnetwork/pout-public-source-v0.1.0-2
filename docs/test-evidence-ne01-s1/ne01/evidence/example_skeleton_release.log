@@ -1,0 +1,26 @@
+{
+  "schema": "POUT_NE01_SKELETON_REPORT_V4",
+  "mode": "NE01_STORAGE_POWER_SKELETON_RESEARCH_ONLY",
+  "profile": {"steps_per_chunk": 4096, "checkpoint_interval": 64, "layers": 2, "salt": "4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e", "id": "9ebfa3293706a9a4469c8893c36efa20a72b65786e855a62dc8ad6deb79d581c"},
+  "audit_policy": {"id": "2b143077ade1e12304aa35ed0440d6f5f621379db3c281c0e97ba9b09c0668e4", "chunk_samples": 4, "checkpoint_samples": 4, "chunk_bytes": 4096},
+  "sector": {"chunks": 16, "chunk_bytes": 4096, "ciphertext_bytes": 65536, "replicas": 2, "stored_labels_per_replica": 2080, "label_bytes_per_replica": 66560},
+  "beacon_mode": "TEST_FIXTURE_BEACON_PREDICTABLE_TO_SEED_HOLDER",
+  "measured_on_this_host": {
+    "seal_seconds_per_replica": [0.114682, 0.123055], "seal_steps_per_replica": 131072,
+    "stored_response_seconds": 0.000164, "verify_seconds": 0.031745, "verifier_recomputed_steps": 34304,
+    "regeneration_without_cache_worst_seconds": 0.120103, "regeneration_without_cache_worst_steps": 131072,
+    "regeneration_without_cache_sampled_seconds": 0.266602, "regeneration_without_cache_sampled_steps": 280064,
+    "finals_cache_labels": 32, "finals_cache_bytes": 1024, "regeneration_with_finals_cached_worst_seconds": 0.004105, "regeneration_with_finals_cached_worst_steps": 4096,
+    "regeneration_with_finals_cached_sampled_seconds": 0.010013, "regeneration_with_finals_cached_sampled_steps": 9728,
+    "lab_window_seconds": 5.0, "no_cache_regeneration_exceeds_lab_window": false, "finals_cached_regeneration_exceeds_lab_window": false,
+    "asserted_security_margin": false
+  },
+  "epochs": {"count": 8, "audited_epochs": 8, "distinct_beacons": 8, "passes": 16, "failures": 0, "established_after_epoch": 8, "receipts_refused_as_evidence": 8, "receipt_payment_accrued_unfunded": 524288, "provider_live_units": 512},
+  "consensus_eligibility": "Established",
+  "consensus_weight": 512,
+  "weight_by_owner_prefix": {"a0a0a0a0": 256, "b0b0b0b0": 256},
+  "scope": "NE01_TEST_MODEL_OWNER_RULE_2026_11_07",
+  "unmet_test_model_criteria": 0,
+  "open_production_gates": ["ExternalSecurityReview", "MultiDeviceTest", "BeaconUnpredictability", "DelayPrimitiveGate", "DepthRobustnessGate", "ResourceTheorem", "HostedCi"],
+  "hosted_ci": "HOSTED_CI_PENDING"
+}
